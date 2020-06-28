@@ -29,5 +29,5 @@ funct = 2'dx;
 $display(" The value of functionality is %b",funct);
 #4;
 end
-
+// The comment
 endmodule
