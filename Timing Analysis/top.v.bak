@@ -1,0 +1,13 @@
+module top( clk, q);
+input clk;
+input  [3:0] d;
+output [3:0] q;
+reg    [3:0] count;
+
+always@(posedge clk) begin
+    count <= count + 1'b1;
+end
+
+assign q = (count > 4'd1) ? d : 4'd0;
+
+endmodule

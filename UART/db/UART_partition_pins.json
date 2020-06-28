@@ -1,0 +1,41 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "indicator[0]",
+					"strict" : false
+				},
+				{
+					"name" : "indicator[1]",
+					"strict" : false
+				},
+				{
+					"name" : "indicator[2]",
+					"strict" : false
+				},
+				{
+					"name" : "indicator[3]",
+					"strict" : false
+				},
+				{
+					"name" : "dout",
+					"strict" : false
+				},
+				{
+					"name" : "transmit",
+					"strict" : false
+				},
+				{
+					"name" : "din",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

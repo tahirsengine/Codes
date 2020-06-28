@@ -1,0 +1,8 @@
+`timescale 1ns/1ps
+module top(out,in1,in2);
+input in1,in2;
+output out;
+
+AND2 inst (out,in1,in2);
+
+endmodule

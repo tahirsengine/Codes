@@ -1,0 +1,53 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/18.0
+vtb
+Z0 !s110 1592145994
+!i10b 1
+!s100 4DA1g3_Dc6`0j8_HMkbVQ0
+ICb;B`KO4cNL1dG7UV<zl<0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/tahir/Desktop/UART_Tx
+w1592131437
+8C:/Users/tahir/Desktop/UART_Tx/tb.v
+FC:/Users/tahir/Desktop/UART_Tx/tb.v
+L0 2
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1592145994.000000
+!s107 C:/Users/tahir/Desktop/UART_Tx/tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/tahir/Desktop/UART_Tx/tb.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vUART_Tx
+R0
+!i10b 1
+!s100 B6JIkm=Smz6ABSe8:85]h0
+Id;399R<oz@Pz[<znIN_J_0
+R1
+R2
+w1592139128
+8C:/Users/tahir/Desktop/UART_Tx/UART_Tx.v
+FC:/Users/tahir/Desktop/UART_Tx/UART_Tx.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/tahir/Desktop/UART_Tx/UART_Tx.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/tahir/Desktop/UART_Tx/UART_Tx.v|
+!i113 1
+R5
+R6
+n@u@a@r@t_@tx

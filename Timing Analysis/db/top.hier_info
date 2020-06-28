@@ -1,0 +1,20 @@
+|top
+clka => count1[0]~reg0.CLK
+clka => count1[1]~reg0.CLK
+clka => count1[2]~reg0.CLK
+clka => count1[3]~reg0.CLK
+clkb => a.CLK
+q[0] << q.DB_MAX_OUTPUT_PORT_TYPE
+q[1] << q.DB_MAX_OUTPUT_PORT_TYPE
+q[2] << q.DB_MAX_OUTPUT_PORT_TYPE
+q[3] << q.DB_MAX_OUTPUT_PORT_TYPE
+d[0] => q.DATAB
+d[1] => q.DATAB
+d[2] => q.DATAB
+d[3] => q.DATAB
+count1[0] << count1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count1[1] << count1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count1[2] << count1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count1[3] << count1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

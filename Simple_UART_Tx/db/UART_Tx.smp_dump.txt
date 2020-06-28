@@ -1,0 +1,13 @@
+
+State Machine - |UART_Tx|state
+Name state.parity state.bit_6 state.bit_5 state.bit_4 state.bit_3 state.bit_2 state.bit_1 state.bit_0 state.idle state.start_bit 
+state.start_bit 0 0 0 0 0 0 0 0 0 0 
+state.idle 0 0 0 0 0 0 0 0 1 1 
+state.bit_0 0 0 0 0 0 0 0 1 0 1 
+state.bit_1 0 0 0 0 0 0 1 0 0 1 
+state.bit_2 0 0 0 0 0 1 0 0 0 1 
+state.bit_3 0 0 0 0 1 0 0 0 0 1 
+state.bit_4 0 0 0 1 0 0 0 0 0 1 
+state.bit_5 0 0 1 0 0 0 0 0 0 1 
+state.bit_6 0 1 0 0 0 0 0 0 0 1 
+state.parity 1 0 0 0 0 0 0 0 0 1 

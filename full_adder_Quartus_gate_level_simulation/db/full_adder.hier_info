@@ -1,0 +1,61 @@
+|four_bit_adder
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+cin => cin.IN1
+carryout << full_adder:inst3.carryout
+sum[0] << full_adder:inst0.sum
+sum[1] << full_adder:inst1.sum
+sum[2] << full_adder:inst2.sum
+sum[3] << full_adder:inst3.sum
+
+
+|four_bit_adder|full_adder:inst0
+a => axorb.IN0
+a => carryout.IN0
+b => axorb.IN1
+b => carryout.IN1
+cin => sum.IN1
+cin => carryout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carryout <= carryout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_adder|full_adder:inst1
+a => axorb.IN0
+a => carryout.IN0
+b => axorb.IN1
+b => carryout.IN1
+cin => sum.IN1
+cin => carryout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carryout <= carryout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_adder|full_adder:inst2
+a => axorb.IN0
+a => carryout.IN0
+b => axorb.IN1
+b => carryout.IN1
+cin => sum.IN1
+cin => carryout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carryout <= carryout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_adder|full_adder:inst3
+a => axorb.IN0
+a => carryout.IN0
+b => axorb.IN1
+b => carryout.IN1
+cin => sum.IN1
+cin => carryout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carryout <= carryout.DB_MAX_OUTPUT_PORT_TYPE
+
+

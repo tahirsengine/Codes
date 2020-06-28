@@ -1,0 +1,67 @@
+|UART
+clk => clk.IN2
+din => din.IN1
+transmit => transmit.IN1
+indicator[0] << UART_Rx:inst_0.indicator
+indicator[1] << UART_Rx:inst_0.indicator
+indicator[2] << UART_Rx:inst_0.indicator
+indicator[3] << UART_Rx:inst_0.indicator
+indicator[4] << UART_Rx:inst_0.indicator
+indicator[5] << UART_Rx:inst_0.indicator
+indicator[6] << UART_Rx:inst_0.indicator
+indicator[7] << UART_Rx:inst_0.indicator
+dout << UART_Tx:inst_1.dout
+
+
+|UART|UART_Rx:inst_0
+din => Selector26.IN1
+din => state.OUTPUTSELECT
+din => state.OUTPUTSELECT
+din => state.OUTPUTSELECT
+din => buffer.OUTPUTSELECT
+din => buffer.OUTPUTSELECT
+din => buffer.OUTPUTSELECT
+din => buffer.OUTPUTSELECT
+din => buffer.OUTPUTSELECT
+din => buffer.OUTPUTSELECT
+din => buffer.OUTPUTSELECT
+din => buffer.OUTPUTSELECT
+clk => clk_baud.CLK
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+clk => count[8].CLK
+clk => count[9].CLK
+indicator[0] <= indicator[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+indicator[1] <= indicator[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+indicator[2] <= indicator[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+indicator[3] <= indicator[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+indicator[4] <= indicator[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+indicator[5] <= indicator[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+indicator[6] <= indicator[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+indicator[7] <= indicator[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|UART|UART_Tx:inst_1
+transmit => start.PRESET
+transmit => state~3.DATAIN
+transmit => dout~reg0.ENA
+clk => clk_baud.CLK
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+clk => count[8].CLK
+clk => count[9].CLK
+dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

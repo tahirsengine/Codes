@@ -1,0 +1,10 @@
+|gateinst
+clk => inst5.ACLR
+ctrl1 => inst1.IN0
+ctrl1 => inst2.IN0
+ctrl2 => inst1.IN1
+ctrl2 => inst2.IN1
+data_in => inst4.DATAIN
+out <= <GND>
+
+

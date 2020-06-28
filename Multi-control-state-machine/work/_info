@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/18.0
+vbench
+Z0 !s110 1592665343
+!i10b 1
+!s100 <]Y<a1olYzfR7zX8975eV0
+IVXR]zA5l@:[?j7GE4mdQn1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/tahir/Desktop/Multi-control-state-machine
+w1592665336
+8C:/Users/tahir/Desktop/Multi-control-state-machine/tb.v
+FC:/Users/tahir/Desktop/Multi-control-state-machine/tb.v
+L0 2
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1592665343.000000
+!s107 C:/Users/tahir/Desktop/Multi-control-state-machine/tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/tahir/Desktop/Multi-control-state-machine/tb.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vmulti_control_state_machine
+R0
+!i10b 1
+!s100 43ZHo<IWkNAcK6R[0;m@@0
+IY8ogTHzQ=;0VOzkF2if9n2
+R1
+R2
+w1592664834
+Z7 8C:/Users/tahir/Desktop/Multi-control-state-machine/multi_control_state_machine.v
+Z8 FC:/Users/tahir/Desktop/Multi-control-state-machine/multi_control_state_machine.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/tahir/Desktop/Multi-control-state-machine/multi_control_state_machine.v|
+Z9 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/tahir/Desktop/Multi-control-state-machine/multi_control_state_machine.v|
+!i113 1
+R5
+R6
+vtop
+!s110 1591546643
+!i10b 1
+!s100 R2hKzV^JGh:O@f>37m_JW2
+IP@Iz?=;W5CnXcZF7Q>5QM1
+R1
+R2
+w1591545559
+R7
+R8
+L0 4
+R3
+r1
+!s85 0
+31
+!s108 1591546643.000000
+!s107 C:/Users/tahir/Desktop/Multi-control-state-machine/multi_control_state_machine.v|
+R9
+!i113 1
+R5
+R6

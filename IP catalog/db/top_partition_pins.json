@@ -1,0 +1,49 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "outa[0]",
+					"strict" : false
+				},
+				{
+					"name" : "outa[1]",
+					"strict" : false
+				},
+				{
+					"name" : "outa[2]",
+					"strict" : false
+				},
+				{
+					"name" : "outa[3]",
+					"strict" : false
+				},
+				{
+					"name" : "inb[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sel[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sel[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ina[0]",
+					"strict" : false
+				},
+				{
+					"name" : "inb[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ina[1]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

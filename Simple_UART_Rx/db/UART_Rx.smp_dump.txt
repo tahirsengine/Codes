@@ -1,0 +1,6 @@
+
+State Machine - |UART_Rx|state
+Name state.idle state.decision state.receive 
+state.idle 0 0 0 
+state.receive 1 0 1 
+state.decision 1 1 0 

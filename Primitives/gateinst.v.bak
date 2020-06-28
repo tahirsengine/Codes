@@ -1,0 +1,6 @@
+module gateinst (a, b, c, d, x, y); 
+    input   a, b, c, d; 
+    output  x, y;
+    and and1 (x, a, b, c);
+    not not1 (y, d);
+endmodule

@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at top.v(16): always construct contains both blocking and non-blocking assignments File: C:/Users/tahir/Desktop/Event_driven_running_state_machine/top.v Line: 16

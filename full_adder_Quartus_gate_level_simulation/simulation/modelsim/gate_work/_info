@@ -1,0 +1,76 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/tahir/Desktop/full_adder/simulation/modelsim
+vadder_tb
+Z1 !s110 1587325761
+!i10b 1
+!s100 Xa5hOhinmGJB5o:A;2RQQ2
+I3^NNKoYY3Cn2nLnan>TVJ2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1587325650
+8C:/Users/tahir/Desktop/full_adder/adder_tb.v
+FC:/Users/tahir/Desktop/full_adder/adder_tb.v
+L0 2
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1587325761.000000
+!s107 C:/Users/tahir/Desktop/full_adder/adder_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tahir/Desktop/full_adder|C:/Users/tahir/Desktop/full_adder/adder_tb.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/tahir/Desktop/full_adder
+Z6 tCvgOpt 0
+vfour_bit_adder
+R1
+!i10b 1
+!s100 11EImJh1`Yad::32zA8Si1
+ISI7:CoCXLBW4eY?O@Tk6W0
+R2
+R0
+Z7 w1587325726
+Z8 8full_adder.vo
+Z9 Ffull_adder.vo
+L0 31
+R3
+r1
+!s85 0
+31
+R4
+Z10 !s107 full_adder.vo|
+Z11 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|full_adder.vo|
+!i113 1
+R5
+Z12 !s92 -vlog01compat -work work +incdir+.
+R6
+vhard_block
+R1
+!i10b 1
+!s100 z2PhU44K5=8TV?G34E9Rj0
+I2i1HIb9=FJ`ZN=Hm?U8?03
+R2
+R0
+R7
+R8
+R9
+L0 499
+R3
+r1
+!s85 0
+31
+R4
+R10
+R11
+!i113 1
+R5
+R12
+R6

@@ -1,0 +1,50 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/tahir/Desktop/Verification automation using TCL, method 1
+vtb
+Z0 !s110 1589641277
+!i10b 1
+!s100 IY]HfdUdUGVB<B__IeOfI1
+I4ZbKEEEIHf>3`B<ZJSnDX3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/tahir/Desktop/Verification automation using TCL, method 2
+w1589113872
+8tb.v
+Ftb.v
+L0 3
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1589641277.000000
+Z5 !s107 the_case.v|tb.v|
+Z6 !s90 -reportprogress|300|tb.v|the_case.v|
+!i113 1
+Z7 tCvgOpt 0
+vthe_case
+R0
+!i10b 1
+!s100 a6[^ZWKRMz@1M_eZA>45^3
+II49LTZ:LYdU@<1Jl4gFe42
+R1
+R2
+w1588430612
+8the_case.v
+Fthe_case.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
