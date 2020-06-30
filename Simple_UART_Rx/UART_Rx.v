@@ -1,3 +1,4 @@
+// Please experiment with it 
 module UART_Rx(din,clk,indicator);
 
 input            din, clk;
