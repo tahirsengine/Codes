@@ -1,0 +1,373 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:40:23 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 6792
+License: Customer
+
+Current time: 	Sun Sep 27 13:42:05 CEST 2020
+Time zone: 	Central European Standard Time (Europe/Berlin)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Available disk space: 64 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	tahir
+User home directory: C:/Users/tahir
+User working directory: C:/Users/tahir/Desktop/Xilinx_Counter_for_Arty_S7_25
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.2
+RDI_DATADIR: C:/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: C:/Users/tahir/AppData/Roaming/Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: C:/Users/tahir/AppData/Roaming/Xilinx/Vivado/2019.2/
+Vivado layouts directory: C:/Users/tahir/AppData/Roaming/Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/tahir/Desktop/Xilinx_Counter_for_Arty_S7_25/vivado.log
+Vivado journal file location: 	C:/Users/tahir/Desktop/Xilinx_Counter_for_Arty_S7_25/vivado.jou
+Engine tmp dir: 	C:/Users/tahir/Desktop/Xilinx_Counter_for_Arty_S7_25/.Xil/Vivado-6792-LAPTOP-4JAK7P19
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 577 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// WARNING: HEventQueue.dispatchEvent() is taking  1483 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  11301 ms.
+// Thread: Reference Handler
+// 	at java.base@9.0.4/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.Reference.processPendingReferences(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.Reference.access$000(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.Reference$ReferenceHandler.run(Unknown Source)
+// Thread: Java2D Disposer
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.desktop@9.0.4/sun.java2d.Disposer.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Batik CleanerThread
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at org.apache.batik.util.CleanerThread.run(CleanerThread.java:106)
+// Thread: TimerQueue
+// 	at java.base@9.0.4/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@9.0.4/java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+// 	at java.base@9.0.4/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+// 	at java.base@9.0.4/java.util.concurrent.DelayQueue.take(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.TimerQueue.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Attach Listener
+// Thread: Signal Dispatcher
+// Thread: main
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.PlanAhead.c(SourceFile:1058)
+// 	at ui.PlanAhead.jswMain(SourceFile:1101)
+// Thread: Monitor HEventQueue Thread
+// 	at java.base@9.0.4/java.lang.Thread.dumpThreads(Native Method)
+// 	at java.base@9.0.4/java.lang.Thread.getAllStackTraces(Unknown Source)
+// 	at ui.utils.d.c.eVM(SourceFile:486)
+// 	at ui.frmwork.b.e.construct(SourceFile:140)
+// 	at ui.frmwork.A.run(SourceFile:199)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Process Messages Thread
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.frmwork.d.h.construct(SourceFile:133)
+// 	at ui.frmwork.A.run(SourceFile:199)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: AWT-Shutdown
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.Object.wait(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.AWTAutoShutdown.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: SyntheticaCleanerThread
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.StyleFactory$ComponentPropertyStore$1.run(StyleFactory.java:1885)
+// Thread: AWT-Windows
+// 	at java.desktop@9.0.4/sun.awt.windows.WToolkit.eventLoop(Native Method)
+// 	at java.desktop@9.0.4/sun.awt.windows.WToolkit.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Common-Cleaner
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/jdk.internal.ref.CleanerImpl.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// 	at java.base@9.0.4/jdk.internal.misc.InnocuousThread.run(Unknown Source)
+// Thread: Finalizer
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.Finalizer$FinalizerThread.run(Unknown Source)
+// Thread: AWT-EventQueue-0
+// 	at java.base@9.0.4/java.security.AccessController.doPrivileged(Native Method)
+// 	at java.desktop@9.0.4/java.awt.image.BufferedImage.isStandard(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.image.BufferedImage.<init>(Unknown Source)
+// 	at java.desktop@9.0.4/sun.java2d.pipe.AlphaPaintPipe.renderPathTile(Unknown Source)
+// 	at java.desktop@9.0.4/sun.java2d.pipe.AAShapePipe.renderTiles(Unknown Source)
+// 	at java.desktop@9.0.4/sun.java2d.pipe.AAShapePipe.renderPath(Unknown Source)
+// 	at java.desktop@9.0.4/sun.java2d.pipe.AAShapePipe.fill(Unknown Source)
+// 	at java.desktop@9.0.4/sun.java2d.pipe.PixelToParallelogramConverter.fill(Unknown Source)
+// 	at java.desktop@9.0.4/sun.java2d.pipe.ValidatePipe.fill(Unknown Source)
+// 	at java.desktop@9.0.4/sun.java2d.SunGraphics2D.fill(Unknown Source)
+// 	at org.apache.batik.gvt.FillShapePainter.paint(FillShapePainter.java:83)
+// 	at org.apache.batik.gvt.CompositeShapePainter.paint(CompositeShapePainter.java:126)
+// 	at org.apache.batik.gvt.ShapeNode.primitivePaint(ShapeNode.java:153)
+// 	at org.apache.batik.gvt.AbstractGraphicsNode.paint(AbstractGraphicsNode.java:509)
+// 	at org.apache.batik.gvt.ShapeNode.paint(ShapeNode.java:143)
+// 	at org.apache.batik.gvt.CompositeGraphicsNode.primitivePaint(CompositeGraphicsNode.java:165)
+// 	at org.apache.batik.gvt.AbstractGraphicsNode.paint(AbstractGraphicsNode.java:509)
+// 	at org.apache.batik.gvt.CompositeGraphicsNode.primitivePaint(CompositeGraphicsNode.java:165)
+// 	at org.apache.batik.gvt.AbstractGraphicsNode.paint(AbstractGraphicsNode.java:509)
+// 	at org.apache.batik.gvt.CompositeGraphicsNode.primitivePaint(CompositeGraphicsNode.java:165)
+// 	at org.apache.batik.gvt.filter.GraphicsNodeRed8Bit.genRect(GraphicsNodeRed8Bit.java:140)
+// 	at org.apache.batik.gvt.filter.GraphicsNodeRed8Bit.copyData(GraphicsNodeRed8Bit.java:116)
+// 	at org.apache.batik.ext.awt.image.GraphicsUtil.drawImage(GraphicsUtil.java:347)
+// 	at org.apache.batik.ext.awt.image.GraphicsUtil.drawImage(GraphicsUtil.java:455)
+// 	at org.apache.batik.gvt.AbstractGraphicsNode.paint(AbstractGraphicsNode.java:549)
+// 	at org.apache.batik.gvt.CompositeGraphicsNode.primitivePaint(CompositeGraphicsNode.java:165)
+// 	at org.apache.batik.gvt.AbstractGraphicsNode.paint(AbstractGraphicsNode.java:509)
+// 	at org.apache.batik.gvt.CompositeGraphicsNode.primitivePaint(CompositeGraphicsNode.java:165)
+// 	at org.apache.batik.gvt.AbstractGraphicsNode.paint(AbstractGraphicsNode.java:509)
+// 	at org.apache.batik.gvt.CompositeGraphicsNode.primitivePaint(CompositeGraphicsNode.java:165)
+// 	at org.apache.batik.gvt.AbstractGraphicsNode.paint(AbstractGraphicsNode.java:509)
+// 	at org.apache.batik.gvt.CompositeGraphicsNode.primitivePaint(CompositeGraphicsNode.java:165)
+// 	at org.apache.batik.gvt.AbstractGraphicsNode.paint(AbstractGraphicsNode.java:509)
+// 	at org.apache.batik.gvt.CompositeGraphicsNode.primitivePaint(CompositeGraphicsNode.java:165)
+// 	at org.apache.batik.gvt.AbstractGraphicsNode.paint(AbstractGraphicsNode.java:509)
+// 	at org.apache.batik.gvt.CompositeGraphicsNode.primitivePaint(CompositeGraphicsNode.java:165)
+// 	at org.apache.batik.gvt.AbstractGraphicsNode.paint(AbstractGraphicsNode.java:509)
+// 	at org.apache.batik.gvt.CompositeGraphicsNode.primitivePaint(CompositeGraphicsNode.java:165)
+// 	at org.apache.batik.gvt.AbstractGraphicsNode.paint(AbstractGraphicsNode.java:509)
+// 	at org.apache.batik.gvt.CompositeGraphicsNode.primitivePaint(CompositeGraphicsNode.java:165)
+// 	at org.apache.batik.gvt.CanvasGraphicsNode.primitivePaint(CanvasGraphicsNode.java:159)
+// 	at org.apache.batik.gvt.AbstractGraphicsNode.paint(AbstractGraphicsNode.java:509)
+// 	at org.apache.batik.gvt.CompositeGraphicsNode.primitivePaint(CompositeGraphicsNode.java:165)
+// 	at org.apache.batik.gvt.filter.GraphicsNodeRed8Bit.genRect(GraphicsNodeRed8Bit.java:140)
+// 	at org.apache.batik.gvt.filter.GraphicsNodeRed8Bit.copyData(GraphicsNodeRed8Bit.java:116)
+// 	at org.apache.batik.ext.awt.image.rendered.TileCacheRed.genRect(TileCacheRed.java:63)
+// 	at org.apache.batik.ext.awt.image.rendered.AbstractTiledRed.drawBlockInPlace(AbstractTiledRed.java:629)
+// 	at org.apache.batik.ext.awt.image.rendered.AbstractTiledRed.drawBlock(AbstractTiledRed.java:544)
+// 	at org.apache.batik.ext.awt.image.rendered.AbstractTiledRed.copyToRasterByBlocks(AbstractTiledRed.java:430)
+// 	at org.apache.batik.ext.awt.image.rendered.AbstractTiledRed.copyData(AbstractTiledRed.java:297)
+// 	at org.apache.batik.ext.awt.image.rendered.TranslateRed.copyData(TranslateRed.java:105)
+// 	at org.apache.batik.ext.awt.image.rendered.PadRed.copyData(PadRed.java:88)
+// 	at org.apache.batik.gvt.renderer.StaticRenderer.repaint(StaticRenderer.java:394)
+// 	at org.apache.batik.gvt.renderer.StaticRenderer.repaint(StaticRenderer.java:344)
+// 	at org.apache.batik.transcoder.image.ImageTranscoder.transcode(ImageTranscoder.java:111)
+// 	at org.apache.batik.transcoder.XMLAbstractTranscoder.transcode(XMLAbstractTranscoder.java:142)
+// 	at org.apache.batik.transcoder.SVGAbstractTranscoder.transcode(SVGAbstractTranscoder.java:156)
+// 	at ui.d.m.a(SourceFile:35)
+// 	at ui.d.d.h(SourceFile:1857)
+// 	at ui.d.d.a(SourceFile:1824)
+// 	at ui.d.d.cz(SourceFile:1415)
+// 	at ui.d.d.cx(SourceFile:1392)
+// 	at ui.views.r.x.paintComponent(SourceFile:217)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paintChildren(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paintChildren(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paintChildren(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paintChildren(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JViewport.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paintChildren(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paintChildren(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paintChildren(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paintChildren(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paintChildren(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paintChildren(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paintChildren(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paintChildren(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paintChildren(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paintChildren(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paintChildren(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paintChildren(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paintChildren(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paintChildren(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paintChildren(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paintChildren(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paintChildren(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paintChildren(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paintChildren(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paintChildren(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paintChildren(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paintChildren(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paintChildren(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paintChildren(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JSplitPane.paintChildren(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paintChildren(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paintChildren(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paintChildren(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paintChildren(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paintChildren(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paintChildren(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paintChildren(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JLayeredPane.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paintChildren(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paintToOffscreen(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.RepaintManager$PaintManager.paintDoubleBufferedImpl(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.RepaintManager.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paint(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.GraphicsCallback$PaintCallback.run(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.SunGraphicsCallback.runOneComponent(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.SunGraphicsCallback.runComponents(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.Container.paint(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.Window.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.RepaintManager$4.run(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.RepaintManager$4.run(Unknown Source)
+// 	at java.base@9.0.4/java.security.AccessController.doPrivileged(Native Method)
+// 	at java.base@9.0.4/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.RepaintManager.access$1200(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue.access$500(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue$3.run(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue$3.run(Unknown Source)
+// 	at java.base@9.0.4/java.security.AccessController.doPrivileged(Native Method)
+// 	at java.base@9.0.4/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue.dispatchEvent(Unknown Source)
+// 	at ui.frmwork.b.d.dispatchEvent(SourceFile:88)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.run(Unknown Source)
+// Thread: Thread-1
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.Object.wait(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue.invokeAndWait(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue.invokeAndWait(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.SwingUtilities.invokeAndWait(Unknown Source)
+// 	at ui.frmwork.G.fireTclEvent(SourceFile:334)
+// Thread: SyntheticaAnimation 50
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// TclEventType: PROJECT_OPEN_DIALOG
+// WARNING: HEventQueue.dispatchEvent() is taking  1104 ms.
+// TclEventType: PROJECT_OPEN_DIALOG
+// HMemoryUtils.trashcanNow. Engine heap size: 577 MB. GUI used memory: 51 MB. Current time: 9/27/20, 1:42:06 PM CEST
+// bB (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\tahir\Desktop\Xilinx_Counter_for_Arty_S7_25\Counter.xpr. Version: Vivado v2019.2 
+// WARNING: HEventQueue.dispatchEvent() is taking  1081 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1088 ms.
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/tahir/Desktop/Xilinx_Counter_for_Arty_S7_25/Counter.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// WARNING: HEventQueue.dispatchEvent() is taking  1018 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 50 MB. Current time: 9/27/20, 1:42:22 PM CEST
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/tahir/Desktop/Xilinx_Counter_for_Arty_S7_25/Counter.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (bB)
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 68 MB (+68681kb) [00:02:48]
+// [Engine Memory]: 670 MB (+551320kb) [00:02:49]
+// [GUI Memory]: 82 MB (+11093kb) [00:02:52]
+// [GUI Memory]: 106 MB (+20847kb) [00:02:57]
+// WARNING: updateGUI() is taking  1162 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  39452 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5377 ms.
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2338] Canceling the changes to the IP catalog. Reverting the catalog back to its previous state. INFO: [IP_Flow 19-2340] The IP catalog has been returned to its previous state. 
+// WARNING: HEventQueue.dispatchEvent() is taking  1145 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 703 MB. GUI used memory: 57 MB. Current time: 9/27/20, 1:43:18 PM CEST
+// CommandFailedException: ERROR: [Common 17-69] Command failed:  
+// Tcl Message: INFO: [Common 17-344] 'open_project' was cancelled 
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 1240ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1302 ms.
+closeMainWindow("Counter - [C:/Users/tahir/Desktop/Xilinx_Counter_for_Arty_S7_25/Counter.xpr] - Vivado 2019.2"); // cr
+// HOptionPane Warning: 'A background task is running. Please wait until it completes to exit Vivado. If you choose to abort background task and exit immediately, you will lose all unsaved changes to project. (Background Task)'
+// Elapsed time: 59 seconds
+dismissDialog("Open Project"); // bB (cr)
+// WARNING: HEventQueue.dispatchEvent() is taking  1262 ms.

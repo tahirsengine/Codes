@@ -1,0 +1,2 @@
+With newer boards: S25FL128S
+With older boards: mt25ql128

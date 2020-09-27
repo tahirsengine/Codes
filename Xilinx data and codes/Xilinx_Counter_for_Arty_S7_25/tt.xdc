@@ -1,0 +1,15 @@
+set_property IOSTANDARD LVTTL [get_ports {counter_out[3]}]
+set_property IOSTANDARD LVTTL [get_ports {counter_out[2]}]
+set_property IOSTANDARD LVTTL [get_ports {counter_out[1]}]
+set_property IOSTANDARD LVTTL [get_ports {counter_out[0]}]
+set_property IOSTANDARD LVTTL [get_ports clk]
+set_property PACKAGE_PIN E18 [get_ports {counter_out[3]}]
+set_property PACKAGE_PIN F13 [get_ports {counter_out[2]}]
+set_property PACKAGE_PIN E13 [get_ports {counter_out[1]}]
+set_property PACKAGE_PIN H15 [get_ports {counter_out[0]}]
+set_property PACKAGE_PIN F14 [get_ports clk]
+
+set_property CONFIG_MODE SPIx4 [current_design]
+set_property BITSTREAM.GENERAL.COMPRESS TRUE [current_design]
+set_property BITSTREAM.CONFIG.CONFIGRATE 50 [current_design]
+

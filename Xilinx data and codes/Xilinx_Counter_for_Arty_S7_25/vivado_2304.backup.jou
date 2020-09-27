@@ -1,0 +1,68 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Sep 27 13:46:19 2020
+# Process ID: 2304
+# Current directory: C:/Users/tahir/Desktop/Xilinx_Counter_for_Arty_S7_25
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11672 C:\Users\tahir\Desktop\Xilinx_Counter_for_Arty_S7_25\Counter.xpr
+# Log file: C:/Users/tahir/Desktop/Xilinx_Counter_for_Arty_S7_25/vivado.log
+# Journal file: C:/Users/tahir/Desktop/Xilinx_Counter_for_Arty_S7_25\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/tahir/Desktop/Xilinx_Counter_for_Arty_S7_25/Counter.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+export_ip_user_files -of_objects  [get_files C:/Users/tahir/Desktop/Counter_modelsim/counter.v] -no_script -reset -force -quiet
+remove_files  C:/Users/tahir/Desktop/Counter_modelsim/counter.v
+add_files -norecurse {{C:/Users/tahir/Desktop/Counter for Max1000/counter_for_FPGA.v}}
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+set_property IOSTANDARD LVTTL [get_ports [list {counter_out[3]} {counter_out[2]} {counter_out[1]} {counter_out[0]}]]
+close_design
+add_files -fileset constrs_1 -norecurse C:/Users/tahir/Desktop/Xilinx_Counter_for_Arty_S7_25/tt.xdc
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+close_design
+open_run synth_1 -name synth_1
+set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_1]
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/tahir/Desktop/Xilinx_Counter_for_Arty_S7_25/Counter.runs/impl_1/counter.bit} [get_hw_devices xc7s25_0]
+current_hw_device [get_hw_devices xc7s25_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s25_0] 0]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices xc7s25_0] 0] [lindex [get_cfgmem_parts {mt25ql128-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7s25_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7s25_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7s25_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7s25_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7s25_0] 0]]
+refresh_hw_device [lindex [get_hw_devices xc7s25_0] 0]
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7s25_0] 0]]
+set_property PROGRAM.FILES [list "C:/Users/tahir/Desktop/Xilinx_Counter_for_Arty_S7_25/Counter.runs/impl_1/counter.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7s25_0] 0]]
+set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7s25_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7s25_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7s25_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7s25_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7s25_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7s25_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7s25_0] 0]]
+startgroup 
+create_hw_bitstream -hw_device [lindex [get_hw_devices xc7s25_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7s25_0] 0]]; program_hw_devices [lindex [get_hw_devices xc7s25_0] 0]; refresh_hw_device [lindex [get_hw_devices xc7s25_0] 0];
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7s25_0] 0]]
+endgroup
+close_hw_manager
+close_design
+export_ip_user_files -of_objects  [get_files {{C:/Users/tahir/Desktop/Counter for Max1000/counter_for_FPGA.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/tahir/Desktop/Counter for Max1000/counter_for_FPGA.v}}
