@@ -1,0 +1,9 @@
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Sum is higher than decimal 12
+Sum is higher than decimal 12
+Sum is lower than or equal to decimal 12
+Substration is higher than decimal 4
+Substration result is lower than or equal to decimal 4
+Substration result is lower than or equal to decimal 4
+$stop called at time : 24 ns : File "C:/Users/tahir/Desktop/Assertions and tasks/tb.sv" Line 23

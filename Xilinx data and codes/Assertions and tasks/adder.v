@@ -1,0 +1,11 @@
+`timescale 1ns/1ps
+
+module add_sub(clk,a,b,c, as);
+  input [2:0] a,b;
+  input as;
+  input clk; 
+  output reg [3:0] c;
+  always @ ( posedge clk )
+    if(as) c <= a + b;
+    else   c <= a - b;
+endmodule

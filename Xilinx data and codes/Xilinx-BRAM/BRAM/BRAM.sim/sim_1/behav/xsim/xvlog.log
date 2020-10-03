@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/new/top_BRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_BRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tc_bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

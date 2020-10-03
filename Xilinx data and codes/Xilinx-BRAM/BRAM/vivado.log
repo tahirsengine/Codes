@@ -1,0 +1,137 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Oct  3 16:07:41 2020
+# Process ID: 5172
+# Current directory: C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15816 C:\Users\tahir\Desktop\Xilinx-BRAM\BRAM\BRAM.xpr
+# Log file: C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/vivado.log
+# Journal file: C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci'.
+Scanning sources...
+Finished scanning sources
+ERROR: [IP_Flow 19-993] Could not find IP file for IP 'blk_mem_gen_0'.
+CRITICAL WARNING: [IP_Flow 19-5097] Unable to determine VLNV from IP file; verify it has the correct syntax: 
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:40 ; elapsed = 00:00:15 . Memory (MB): peak = 768.281 ; gain = 83.539
+ERROR: [Common 17-39] 'open_project' failed due to earlier errors.
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -reset -force -quiet
+remove_files  -fileset blk_mem_gen_0 C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+INFO: [Project 1-386] Moving file 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' from fileset 'blk_mem_gen_0' to fileset 'sources_1'.
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_0 -dir c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip
+set_property -dict [list CONFIG.Write_Width_A {8} CONFIG.Write_Depth_A {8} CONFIG.Read_Width_A {8} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8} CONFIG.Use_RSTA_Pin {true} CONFIG.EN_SAFETY_CKT {true}] [get_ips blk_mem_gen_0]
+generate_target {instantiation_template} [get_files c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_0'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_0'...
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP blk_mem_gen_0, cache-ID = 5d4229639c514a1e; cache size = 0.125 MB.
+export_ip_user_files -of_objects [get_files c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci'
+export_simulation -of_objects [get_files c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -directory C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.ip_user_files -ipstatic_source_dir C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.cache/compile_simlib/modelsim} {questa=C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.cache/compile_simlib/questa} {riviera=C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.cache/compile_simlib/riviera} {activehdl=C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' is already up-to-date
+[Sat Oct  3 16:19:23 2020] Launched synth_1...
+Run output will be captured here: C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' is already up-to-date
+[Sat Oct  3 16:21:35 2020] Launched impl_1...
+Run output will be captured here: C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.runs/impl_1/runme.log
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tc_bram' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tc_bram_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/new/top_BRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_BRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tc_bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 880.820 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '7' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+"xelab -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tc_bram_behav xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tc_bram_behav xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="spa...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.top_BRAM
+Compiling module xil_defaultlib.tc_bram
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tc_bram_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim/xsim.dir/tc_bram_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim/xsim.dir/tc_bram_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sat Oct  3 16:24:41 2020. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sat Oct  3 16:24:41 2020...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 880.820 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tc_bram_behav -key {Behavioral:sim_1:Functional:tc_bram} -tclbatch {tc_bram.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tc_bram.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module tc_bram.your_instance_name.haha.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+$stop called at time : 46 ns : File "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" Line 69
+xsim: Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 893.363 ; gain = 10.859
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tc_bram_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 893.363 ; gain = 12.543

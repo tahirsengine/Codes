@@ -1,0 +1,874 @@
+Wed Sep 23 21:00:38 CEST 2020
+Trace back: too many nested evaluations (infinite loop?)
+    while executing
+"info exists windowObjCache($w)"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::FindWindowObj" body line 4)
+    invoked from within
+"$vsimPriv(windowmgr) FindWindowObj $window"
+    (object "::.vcop" method "::vsimwidgets::Vcop::FocusIn" body line 5)
+    invoked from within
+".vcop FocusIn .srcobjdlg.button1"
+    (command bound to event)
+  <2:C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {too many nested evaluations (infinite loop?)}
+  <1:eval:1: ::tk::dialog::error::bgerror {too many nested evaluations (infinite loop?)}
+Wed Sep 23 21:00:39 CEST 2020
+Trace back: too many nested evaluations (infinite loop?)
+    (procedure "DoNormalizeKey" line 1)
+    invoked from within
+"DoNormalizeKey $key $install $report"
+    (procedure "NormalizeKey" line 3)
+    invoked from within
+"NormalizeKey $key"
+    (procedure "Binding::ServiceBinding" line 8)
+    invoked from within
+"Binding::ServiceBinding .srcobjdlg.button1 <Key-Return> 13 12 15 776 539 \r"
+    (command bound to event)
+  <2:C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {too many nested evaluations (infinite loop?)}
+  <1:proc:153: ::tk::dialog::error::bgerror {too many nested evaluations (infinite loop?)}
+Wed Sep 23 21:00:39 CEST 2020
+Trace back: too many nested evaluations (infinite loop?)
+    (procedure "getCurrentNamespace" line 1)
+    invoked from within
+"getCurrentNamespace"
+    (procedure "ContextIsSim" line 4)
+    invoked from within
+"ContextIsSim"
+    (procedure "::MtiFS::GetKernelPathname" line 16)
+    invoked from within
+"::MtiFS::GetKernelPathname $fileName"
+    (object "::.main_pane.source3.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::OpenFile" body line 5)
+    invoked from within
+"OpenFile $use_file 0 $ro"
+    (object "::.main_pane.source3.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::SourceReplaceFile" body line 9)
+    invoked from within
+"SourceReplaceFile $fileName"
+    (object "::.main_pane.source3.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::CheckModification" body line 26)
+    invoked from within
+"::.main_pane.source3.interior.cs.body.srcobj CheckModification"
+    (in namespace inscope "::vsimwidgets::Srcobj" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Srcobj {::.main_pane.source3.interior.cs.body.srcobj CheckModification}"
+    (command bound to event)
+  <2:C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {too many nested evaluations (infinite loop?)}
+  <1:proc:153: ::tk::dialog::error::bgerror {too many nested evaluations (infinite loop?)}
+Wed Sep 23 21:00:39 CEST 2020
+Trace back: too many nested evaluations (infinite loop?)
+    while executing
+"_init .main_pane.source3.interior.cs.body.srcobj.sci {} -motionactive -mono -tight -enabledcb {namespace inscope ::vsimwidgets::SrcCommon {::.main_pan..."
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 [lrange $args 0 end-1] [lindex $args end]"
+    (procedure "::applyToList" line 2)
+    invoked from within
+"::applyToList _init $w $msg $args"
+    (procedure "mtiBalloon::_mtiBalloon" line 37)
+    invoked from within
+"mtiBalloon::_mtiBalloon .main_pane.source3.interior.cs.body.srcobj.sci {} -motionactive -mono -tight -enabledcb {namespace inscope ::vsimwidgets::SrcC..."
+    ("eval" body line 1)
+    invoked from within
+"eval [linsert $args 0 mtiBalloon::_mtiBalloon $w $msg]"
+    (procedure "mtiBalloon" line 2)
+    invoked from within
+"mtiBalloon .main_pane.source3.interior.cs.body.srcobj.sci "" -motionactive -mono -tight -enabledcb {namespace inscope ::vsimwidgets::SrcCommon {::.mai..."
+    ("eval" body line 1)
+    invoked from within
+"eval mtiBalloon $w {""} $args"
+    (procedure "mtiBalloon::Register" line 2)
+    invoked from within
+"mtiBalloon::Register $w -motionactive -mono -tight  -enabledcb [code $this BalloonsEnabled]  -getmsgcb  [code $this BalloonText]"
+    (object "::.main_pane.source3.interior.cs.body.srcobj" method "::vsimwidgets::SrcCommon::BalloonInitialize" body line 2)
+    invoked from within
+"BalloonInitialize [GetTextWidget] $this"
+    (object "::.main_pane.source3.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::InitializeForDebug" body line 16)
+    invoked from within
+"InitializeForDebug"
+    (object "::.main_pane.source3.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::OpenFile" body line 92)
+    invoked from within
+"OpenFile $use_file 0 $ro"
+    (object "::.main_pane.source3.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::SourceReplaceFile" body line 9)
+    invoked from within
+"SourceReplaceFile $fileName"
+    (object "::.main_pane.source3.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::CheckModification" body line 26)
+    invoked from within
+"::.main_pane.source3.interior.cs.body.srcobj CheckModification"
+    (in namespace inscope "::vsimwidgets::Srcobj" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Srcobj {::.main_pane.source3.interior.cs.body.srcobj CheckModification}"
+    (command bound to event)
+  <2:C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {too many nested evaluations (infinite loop?)}
+  <1:proc:153: ::tk::dialog::error::bgerror {too many nested evaluations (infinite loop?)}
+Wed Sep 23 21:00:39 CEST 2020
+Trace back: too many nested evaluations (infinite loop?)
+    (object "::.main_pane.cs.19.ts" method "::mtiwidgets::Tabset::index" body line 1)
+    invoked from within
+"index $index"
+    (object "::.main_pane.cs.19.ts" method "::mtiwidgets::Tabset::tabconfigure" body line 3)
+    invoked from within
+"tabconfigure 0 -label"
+    ("eval" body line 1)
+    invoked from within
+"eval [linsert $args 0 tabconfigure $index]"
+    (object "::.main_pane.cs.19.ts" method "::mtiwidgets::Tabset::tabcget" body line 2)
+    invoked from within
+"tabcget $idx -label"
+    (object "::.main_pane.cs.19.ts" method "::mtiwidgets::DraggableTabset::indexFromWindow" body line 6)
+    invoked from within
+"$itk_component(ts) indexFromWindow $window"
+    (object "::.main_pane.cs.19" method "::mtiwidgets::Tabbedwindow::panecget" body line 7)
+    invoked from within
+"$pp panecget $window $option"
+    (object "::.main_pane" method "::mtiwidgets::Panemanager::panecget" body line 16)
+    invoked from within
+"panecget $window -hide"
+    (object "::.main_pane" method "::mtiwidgets::Panemanager::visible" body line 18)
+    invoked from within
+"$panemanager visible $windowobj"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::PaneMgrVisible" body line 2)
+    invoked from within
+"PaneMgrVisible $windowobj"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::WindowObjVisible" body line 3)
+    invoked from within
+"WindowObjVisible $windowobj"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::WindowInLayout" body line 2)
+    invoked from within
+"WindowInLayout $a_windowobj"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::GetUniqueLabel" body line 8)
+    invoked from within
+"$itk_option(-windowmanager) GetUniqueLabel $frame_name $tab_label"
+    (object "::.main_pane.source3" method "::mtiwidgets::WindowObj::TabLabel" body line 31)
+    invoked from within
+"TabLabel"
+    (object "::.main_pane.source3" method "::mtiwidgets::WindowObj::UpdateText" body line 8)
+    invoked from within
+"$windowobj UpdateText"
+    (object "::.main_pane.source3.interior.cs.body.srcobj" method "::vsimwidgets::SrcCommon::updateTitle" body line 37)
+    invoked from within
+"updateTitle $fileName"
+    (object "::.main_pane.source3.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::OpenFile" body line 93)
+    invoked from within
+"OpenFile $use_file 0 $ro"
+    (object "::.main_pane.source3.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::SourceReplaceFile" body line 9)
+    invoked from within
+"SourceReplaceFile $fileName"
+    (object "::.main_pane.source3.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::CheckModification" body line 26)
+    invoked from within
+"::.main_pane.source3.interior.cs.body.srcobj CheckModification"
+    (in namespace inscope "::vsimwidgets::Srcobj" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Srcobj {::.main_pane.source3.interior.cs.body.srcobj CheckModification}"
+    (command bound to event)
+  <2:C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {too many nested evaluations (infinite loop?)}
+  <1:proc:153: ::tk::dialog::error::bgerror {too many nested evaluations (infinite loop?)}
+Wed Sep 23 21:00:40 CEST 2020
+Trace back: too many nested evaluations (infinite loop?)
+    (object "::.main_pane.cs.19.ts" method "::mtiwidgets::Tabset::_index" body line 1)
+    invoked from within
+"_index $_tabs $index $_currTab"
+    (object "::.main_pane.cs.19.ts" method "::mtiwidgets::Tabset::index" body line 5)
+    invoked from within
+"index $index"
+    (object "::.main_pane.cs.19.ts" method "::mtiwidgets::Tabset::tabconfigure" body line 3)
+    invoked from within
+"tabconfigure 0 -label"
+    ("eval" body line 1)
+    invoked from within
+"eval [linsert $args 0 tabconfigure $index]"
+    (object "::.main_pane.cs.19.ts" method "::mtiwidgets::Tabset::tabcget" body line 2)
+    invoked from within
+"tabcget $idx -label"
+    (object "::.main_pane.cs.19.ts" method "::mtiwidgets::DraggableTabset::indexFromWindow" body line 6)
+    invoked from within
+"$itk_component(ts) indexFromWindow $window"
+    (object "::.main_pane.cs.19" method "::mtiwidgets::Tabbedwindow::panecget" body line 7)
+    invoked from within
+"$pp panecget $window $option"
+    (object "::.main_pane" method "::mtiwidgets::Panemanager::panecget" body line 16)
+    invoked from within
+"panecget $window -hide"
+    (object "::.main_pane" method "::mtiwidgets::Panemanager::visible" body line 18)
+    invoked from within
+"$panemanager visible $windowobj"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::PaneMgrVisible" body line 2)
+    invoked from within
+"PaneMgrVisible $windowobj"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::WindowObjVisible" body line 3)
+    invoked from within
+"WindowObjVisible $windowobj"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::WindowInLayout" body line 2)
+    invoked from within
+"WindowInLayout $a_windowobj"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::GetUniqueLabel" body line 8)
+    invoked from within
+"$itk_option(-windowmanager) GetUniqueLabel $frame_name $tab_label"
+    (object "::.main_pane.source3" method "::mtiwidgets::WindowObj::TabLabel" body line 31)
+    invoked from within
+"$windowobj TabLabel"
+    (object "::.main_pane.cs.19.ts" method "::mtiwidgets::DraggableTabset::renametab" body line 2)
+    invoked from within
+"$itk_component(ts) renametab $window"
+    (object "::.main_pane.cs.19" method "::mtiwidgets::Tabbedwindow::renametab" body line 2)
+    invoked from within
+"$tabbedwindow renametab $window"
+    (object "::.main_pane" method "::mtiwidgets::Panemanager::rename" body line 4)
+    invoked from within
+"$itk_option(-panemanager) rename $frame_name"
+    (while configuring option "-tab_label" for widget "::.main_pane.source3")
+    (object "::.main_pane.source3" method "::itk::Archetype::configure" )
+    invoked from within
+"configure -tab_label $unique_label"
+    (object "::.main_pane.source3" method "::mtiwidgets::WindowObj::TabLabel" body line 37)
+    invoked from within
+"TabLabel"
+    (object "::.main_pane.source3" method "::mtiwidgets::WindowObj::UpdateText" body line 8)
+    invoked from within
+"$windowobj UpdateText"
+    (object "::.main_pane.source3.interior.cs.body.srcobj" method "::vsimwidgets::SrcCommon::updateTitle" body line 37)
+    invoked from within
+"updateTitle $fileName"
+    (object "::.main_pane.source3.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::OpenFile" body line 93)
+    invoked from within
+"OpenFile $use_file 0 $ro"
+    (object "::.main_pane.source3.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::SourceReplaceFile" body line 9)
+    invoked from within
+"SourceReplaceFile $fileName"
+    (object "::.main_pane.source3.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::CheckModification" body line 26)
+    invoked from within
+"::.main_pane.source3.interior.cs.body.srcobj CheckModification"
+    (in namespace inscope "::vsimwidgets::Srcobj" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Srcobj {::.main_pane.source3.interior.cs.body.srcobj CheckModification}"
+    (command bound to event)
+  <2:C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {too many nested evaluations (infinite loop?)}
+  <1:proc:153: ::tk::dialog::error::bgerror {too many nested evaluations (infinite loop?)}
+Wed Sep 23 21:10:28 CEST 2020
+Trace back: too many nested evaluations (infinite loop?)
+    while executing
+"info exists windowObjCache($w)"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::FindWindowObj" body line 4)
+    invoked from within
+"$vsimPriv(windowmgr) FindWindowObj $window"
+    (object "::.vcop" method "::vsimwidgets::Vcop::FocusIn" body line 5)
+    invoked from within
+".vcop FocusIn .srcobjdlg.button1"
+    (command bound to event)
+  <2:C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {too many nested evaluations (infinite loop?)}
+  <1:proc:153: ::tk::dialog::error::bgerror {too many nested evaluations (infinite loop?)}
+Wed Sep 23 21:10:31 CEST 2020
+Trace back: too many nested evaluations (infinite loop?)
+    (procedure "DoNormalizeKey" line 1)
+    invoked from within
+"DoNormalizeKey $key $install $report"
+    (procedure "NormalizeKey" line 3)
+    invoked from within
+"NormalizeKey $key"
+    (procedure "Binding::ServiceBinding" line 8)
+    invoked from within
+"Binding::ServiceBinding .srcobjdlg.button1 <Key-Return> 13 12 13 776 530 \r"
+    (command bound to event)
+  <2:C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {too many nested evaluations (infinite loop?)}
+  <1:proc:153: ::tk::dialog::error::bgerror {too many nested evaluations (infinite loop?)}
+Wed Sep 23 21:10:31 CEST 2020
+Trace back: too many nested evaluations (infinite loop?)
+    (procedure "getCurrentNamespace" line 1)
+    invoked from within
+"getCurrentNamespace"
+    (procedure "ContextIsSim" line 4)
+    invoked from within
+"ContextIsSim"
+    (procedure "::MtiFS::GetKernelPathname" line 16)
+    invoked from within
+"::MtiFS::GetKernelPathname $fileName"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::OpenFile" body line 5)
+    invoked from within
+"OpenFile $use_file 0 $ro"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::SourceReplaceFile" body line 9)
+    invoked from within
+"SourceReplaceFile $fileName"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::CheckModification" body line 26)
+    invoked from within
+"::.main_pane.source4.interior.cs.body.srcobj CheckModification"
+    (in namespace inscope "::vsimwidgets::Srcobj" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Srcobj {::.main_pane.source4.interior.cs.body.srcobj CheckModification}"
+    (command bound to event)
+  <2:C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {too many nested evaluations (infinite loop?)}
+  <1:proc:153: ::tk::dialog::error::bgerror {too many nested evaluations (infinite loop?)}
+Wed Sep 23 21:10:31 CEST 2020
+Trace back: too many nested evaluations (infinite loop?)
+    while executing
+"_init .main_pane.source4.interior.cs.body.srcobj.sci {} -motionactive -mono -tight -enabledcb {namespace inscope ::vsimwidgets::SrcCommon {::.main_pan..."
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 [lrange $args 0 end-1] [lindex $args end]"
+    (procedure "::applyToList" line 2)
+    invoked from within
+"::applyToList _init $w $msg $args"
+    (procedure "mtiBalloon::_mtiBalloon" line 37)
+    invoked from within
+"mtiBalloon::_mtiBalloon .main_pane.source4.interior.cs.body.srcobj.sci {} -motionactive -mono -tight -enabledcb {namespace inscope ::vsimwidgets::SrcC..."
+    ("eval" body line 1)
+    invoked from within
+"eval [linsert $args 0 mtiBalloon::_mtiBalloon $w $msg]"
+    (procedure "mtiBalloon" line 2)
+    invoked from within
+"mtiBalloon .main_pane.source4.interior.cs.body.srcobj.sci "" -motionactive -mono -tight -enabledcb {namespace inscope ::vsimwidgets::SrcCommon {::.mai..."
+    ("eval" body line 1)
+    invoked from within
+"eval mtiBalloon $w {""} $args"
+    (procedure "mtiBalloon::Register" line 2)
+    invoked from within
+"mtiBalloon::Register $w -motionactive -mono -tight  -enabledcb [code $this BalloonsEnabled]  -getmsgcb  [code $this BalloonText]"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::SrcCommon::BalloonInitialize" body line 2)
+    invoked from within
+"BalloonInitialize [GetTextWidget] $this"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::InitializeForDebug" body line 16)
+    invoked from within
+"InitializeForDebug"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::OpenFile" body line 92)
+    invoked from within
+"OpenFile $use_file 0 $ro"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::SourceReplaceFile" body line 9)
+    invoked from within
+"SourceReplaceFile $fileName"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::CheckModification" body line 26)
+    invoked from within
+"::.main_pane.source4.interior.cs.body.srcobj CheckModification"
+    (in namespace inscope "::vsimwidgets::Srcobj" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Srcobj {::.main_pane.source4.interior.cs.body.srcobj CheckModification}"
+    (command bound to event)
+  <2:C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {too many nested evaluations (infinite loop?)}
+  <1:proc:153: ::tk::dialog::error::bgerror {too many nested evaluations (infinite loop?)}
+Wed Sep 23 21:10:32 CEST 2020
+Trace back: too many nested evaluations (infinite loop?)
+    (object "::.main_pane.cs.61.ts" method "::mtiwidgets::Tabset::index" body line 1)
+    invoked from within
+"index $index"
+    (object "::.main_pane.cs.61.ts" method "::mtiwidgets::Tabset::tabconfigure" body line 3)
+    invoked from within
+"tabconfigure 0 -label"
+    ("eval" body line 1)
+    invoked from within
+"eval [linsert $args 0 tabconfigure $index]"
+    (object "::.main_pane.cs.61.ts" method "::mtiwidgets::Tabset::tabcget" body line 2)
+    invoked from within
+"tabcget $idx -label"
+    (object "::.main_pane.cs.61.ts" method "::mtiwidgets::DraggableTabset::indexFromWindow" body line 6)
+    invoked from within
+"$itk_component(ts) indexFromWindow $window"
+    (object "::.main_pane.cs.61" method "::mtiwidgets::Tabbedwindow::panecget" body line 7)
+    invoked from within
+"$pp panecget $window $option"
+    (object "::.main_pane" method "::mtiwidgets::Panemanager::panecget" body line 16)
+    invoked from within
+"panecget $window -hide"
+    (object "::.main_pane" method "::mtiwidgets::Panemanager::visible" body line 18)
+    invoked from within
+"$panemanager visible $windowobj"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::PaneMgrVisible" body line 2)
+    invoked from within
+"PaneMgrVisible $windowobj"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::WindowObjVisible" body line 3)
+    invoked from within
+"WindowObjVisible $windowobj"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::WindowInLayout" body line 2)
+    invoked from within
+"WindowInLayout $a_windowobj"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::GetUniqueLabel" body line 8)
+    invoked from within
+"$itk_option(-windowmanager) GetUniqueLabel $frame_name $tab_label"
+    (object "::.main_pane.source4" method "::mtiwidgets::WindowObj::TabLabel" body line 31)
+    invoked from within
+"TabLabel"
+    (object "::.main_pane.source4" method "::mtiwidgets::WindowObj::UpdateText" body line 8)
+    invoked from within
+"$windowobj UpdateText"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::SrcCommon::updateTitle" body line 37)
+    invoked from within
+"updateTitle $fileName"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::OpenFile" body line 93)
+    invoked from within
+"OpenFile $use_file 0 $ro"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::SourceReplaceFile" body line 9)
+    invoked from within
+"SourceReplaceFile $fileName"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::CheckModification" body line 26)
+    invoked from within
+"::.main_pane.source4.interior.cs.body.srcobj CheckModification"
+    (in namespace inscope "::vsimwidgets::Srcobj" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Srcobj {::.main_pane.source4.interior.cs.body.srcobj CheckModification}"
+    (command bound to event)
+  <2:C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {too many nested evaluations (infinite loop?)}
+  <1:proc:153: ::tk::dialog::error::bgerror {too many nested evaluations (infinite loop?)}
+Wed Sep 23 21:10:32 CEST 2020
+Trace back: too many nested evaluations (infinite loop?)
+    (object "::.main_pane.cs.61.ts" method "::mtiwidgets::Tabset::_index" body line 1)
+    invoked from within
+"_index $_tabs $index $_currTab"
+    (object "::.main_pane.cs.61.ts" method "::mtiwidgets::Tabset::index" body line 5)
+    invoked from within
+"index $index"
+    (object "::.main_pane.cs.61.ts" method "::mtiwidgets::Tabset::tabconfigure" body line 3)
+    invoked from within
+"tabconfigure 0 -label"
+    ("eval" body line 1)
+    invoked from within
+"eval [linsert $args 0 tabconfigure $index]"
+    (object "::.main_pane.cs.61.ts" method "::mtiwidgets::Tabset::tabcget" body line 2)
+    invoked from within
+"tabcget $idx -label"
+    (object "::.main_pane.cs.61.ts" method "::mtiwidgets::DraggableTabset::indexFromWindow" body line 6)
+    invoked from within
+"$itk_component(ts) indexFromWindow $window"
+    (object "::.main_pane.cs.61" method "::mtiwidgets::Tabbedwindow::panecget" body line 7)
+    invoked from within
+"$pp panecget $window $option"
+    (object "::.main_pane" method "::mtiwidgets::Panemanager::panecget" body line 16)
+    invoked from within
+"panecget $window -hide"
+    (object "::.main_pane" method "::mtiwidgets::Panemanager::visible" body line 18)
+    invoked from within
+"$panemanager visible $windowobj"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::PaneMgrVisible" body line 2)
+    invoked from within
+"PaneMgrVisible $windowobj"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::WindowObjVisible" body line 3)
+    invoked from within
+"WindowObjVisible $windowobj"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::WindowInLayout" body line 2)
+    invoked from within
+"WindowInLayout $a_windowobj"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::GetUniqueLabel" body line 8)
+    invoked from within
+"$itk_option(-windowmanager) GetUniqueLabel $frame_name $tab_label"
+    (object "::.main_pane.source4" method "::mtiwidgets::WindowObj::TabLabel" body line 31)
+    invoked from within
+"$windowobj TabLabel"
+    (object "::.main_pane.cs.61.ts" method "::mtiwidgets::DraggableTabset::renametab" body line 2)
+    invoked from within
+"$itk_component(ts) renametab $window"
+    (object "::.main_pane.cs.61" method "::mtiwidgets::Tabbedwindow::renametab" body line 2)
+    invoked from within
+"$tabbedwindow renametab $window"
+    (object "::.main_pane" method "::mtiwidgets::Panemanager::rename" body line 4)
+    invoked from within
+"$itk_option(-panemanager) rename $frame_name"
+    (while configuring option "-tab_label" for widget "::.main_pane.source4")
+    (object "::.main_pane.source4" method "::itk::Archetype::configure" )
+    invoked from within
+"configure -tab_label $unique_label"
+    (object "::.main_pane.source4" method "::mtiwidgets::WindowObj::TabLabel" body line 37)
+    invoked from within
+"TabLabel"
+    (object "::.main_pane.source4" method "::mtiwidgets::WindowObj::UpdateText" body line 8)
+    invoked from within
+"$windowobj UpdateText"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::SrcCommon::updateTitle" body line 37)
+    invoked from within
+"updateTitle $fileName"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::OpenFile" body line 93)
+    invoked from within
+"OpenFile $use_file 0 $ro"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::SourceReplaceFile" body line 9)
+    invoked from within
+"SourceReplaceFile $fileName"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::CheckModification" body line 26)
+    invoked from within
+"::.main_pane.source4.interior.cs.body.srcobj CheckModification"
+    (in namespace inscope "::vsimwidgets::Srcobj" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Srcobj {::.main_pane.source4.interior.cs.body.srcobj CheckModification}"
+    (command bound to event)
+  <2:C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {too many nested evaluations (infinite loop?)}
+  <1:proc:153: ::tk::dialog::error::bgerror {too many nested evaluations (infinite loop?)}
+Wed Sep 23 21:13:58 CEST 2020
+Trace back: too many nested evaluations (infinite loop?)
+    while executing
+"info exists windowObjCache($w)"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::FindWindowObj" body line 4)
+    invoked from within
+"$vsimPriv(windowmgr) FindWindowObj $window"
+    (object "::.vcop" method "::vsimwidgets::Vcop::FocusIn" body line 5)
+    invoked from within
+".vcop FocusIn .srcobjdlg.button1"
+    (command bound to event)
+  <2:C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {too many nested evaluations (infinite loop?)}
+  <1:proc:153: ::tk::dialog::error::bgerror {too many nested evaluations (infinite loop?)}
+Wed Sep 23 21:13:58 CEST 2020
+Trace back: too many nested evaluations (infinite loop?)
+    (procedure "DoNormalizeKey" line 1)
+    invoked from within
+"DoNormalizeKey $key $install $report"
+    (procedure "NormalizeKey" line 3)
+    invoked from within
+"NormalizeKey $key"
+    (procedure "Binding::ServiceBinding" line 8)
+    invoked from within
+"Binding::ServiceBinding .srcobjdlg.button1 <Key-Return> 13 26 7 790 524 \r"
+    (command bound to event)
+  <2:C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {too many nested evaluations (infinite loop?)}
+  <1:proc:153: ::tk::dialog::error::bgerror {too many nested evaluations (infinite loop?)}
+Wed Sep 23 21:13:58 CEST 2020
+Trace back: too many nested evaluations (infinite loop?)
+    (procedure "getCurrentNamespace" line 1)
+    invoked from within
+"getCurrentNamespace"
+    (procedure "ContextIsSim" line 4)
+    invoked from within
+"ContextIsSim"
+    (procedure "::MtiFS::GetKernelPathname" line 16)
+    invoked from within
+"::MtiFS::GetKernelPathname $fileName"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::OpenFile" body line 5)
+    invoked from within
+"OpenFile $use_file 0 $ro"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::SourceReplaceFile" body line 9)
+    invoked from within
+"SourceReplaceFile $fileName"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::CheckModification" body line 26)
+    invoked from within
+"::.main_pane.source4.interior.cs.body.srcobj CheckModification"
+    (in namespace inscope "::vsimwidgets::Srcobj" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Srcobj {::.main_pane.source4.interior.cs.body.srcobj CheckModification}"
+    (command bound to event)
+  <2:C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {too many nested evaluations (infinite loop?)}
+  <1:proc:153: ::tk::dialog::error::bgerror {too many nested evaluations (infinite loop?)}
+Wed Sep 23 21:13:58 CEST 2020
+Trace back: too many nested evaluations (infinite loop?)
+    while executing
+"_init .main_pane.source4.interior.cs.body.srcobj.sci {} -motionactive -mono -tight -enabledcb {namespace inscope ::vsimwidgets::SrcCommon {::.main_pan..."
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 [lrange $args 0 end-1] [lindex $args end]"
+    (procedure "::applyToList" line 2)
+    invoked from within
+"::applyToList _init $w $msg $args"
+    (procedure "mtiBalloon::_mtiBalloon" line 37)
+    invoked from within
+"mtiBalloon::_mtiBalloon .main_pane.source4.interior.cs.body.srcobj.sci {} -motionactive -mono -tight -enabledcb {namespace inscope ::vsimwidgets::SrcC..."
+    ("eval" body line 1)
+    invoked from within
+"eval [linsert $args 0 mtiBalloon::_mtiBalloon $w $msg]"
+    (procedure "mtiBalloon" line 2)
+    invoked from within
+"mtiBalloon .main_pane.source4.interior.cs.body.srcobj.sci "" -motionactive -mono -tight -enabledcb {namespace inscope ::vsimwidgets::SrcCommon {::.mai..."
+    ("eval" body line 1)
+    invoked from within
+"eval mtiBalloon $w {""} $args"
+    (procedure "mtiBalloon::Register" line 2)
+    invoked from within
+"mtiBalloon::Register $w -motionactive -mono -tight  -enabledcb [code $this BalloonsEnabled]  -getmsgcb  [code $this BalloonText]"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::SrcCommon::BalloonInitialize" body line 2)
+    invoked from within
+"BalloonInitialize [GetTextWidget] $this"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::InitializeForDebug" body line 16)
+    invoked from within
+"InitializeForDebug"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::OpenFile" body line 92)
+    invoked from within
+"OpenFile $use_file 0 $ro"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::SourceReplaceFile" body line 9)
+    invoked from within
+"SourceReplaceFile $fileName"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::CheckModification" body line 26)
+    invoked from within
+"::.main_pane.source4.interior.cs.body.srcobj CheckModification"
+    (in namespace inscope "::vsimwidgets::Srcobj" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Srcobj {::.main_pane.source4.interior.cs.body.srcobj CheckModification}"
+    (command bound to event)
+  <2:C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {too many nested evaluations (infinite loop?)}
+  <1:proc:153: ::tk::dialog::error::bgerror {too many nested evaluations (infinite loop?)}
+Wed Sep 23 21:13:59 CEST 2020
+Trace back: too many nested evaluations (infinite loop?)
+    (object "::.main_pane.cs.82.ts" method "::mtiwidgets::Tabset::index" body line 1)
+    invoked from within
+"index $index"
+    (object "::.main_pane.cs.82.ts" method "::mtiwidgets::Tabset::tabconfigure" body line 3)
+    invoked from within
+"tabconfigure 0 -label"
+    ("eval" body line 1)
+    invoked from within
+"eval [linsert $args 0 tabconfigure $index]"
+    (object "::.main_pane.cs.82.ts" method "::mtiwidgets::Tabset::tabcget" body line 2)
+    invoked from within
+"tabcget $idx -label"
+    (object "::.main_pane.cs.82.ts" method "::mtiwidgets::DraggableTabset::indexFromWindow" body line 6)
+    invoked from within
+"$itk_component(ts) indexFromWindow $window"
+    (object "::.main_pane.cs.82" method "::mtiwidgets::Tabbedwindow::panecget" body line 7)
+    invoked from within
+"$pp panecget $window $option"
+    (object "::.main_pane" method "::mtiwidgets::Panemanager::panecget" body line 16)
+    invoked from within
+"panecget $window -hide"
+    (object "::.main_pane" method "::mtiwidgets::Panemanager::visible" body line 18)
+    invoked from within
+"$panemanager visible $windowobj"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::PaneMgrVisible" body line 2)
+    invoked from within
+"PaneMgrVisible $windowobj"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::WindowObjVisible" body line 3)
+    invoked from within
+"WindowObjVisible $windowobj"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::WindowInLayout" body line 2)
+    invoked from within
+"WindowInLayout $a_windowobj"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::GetUniqueLabel" body line 8)
+    invoked from within
+"$itk_option(-windowmanager) GetUniqueLabel $frame_name $tab_label"
+    (object "::.main_pane.source4" method "::mtiwidgets::WindowObj::TabLabel" body line 31)
+    invoked from within
+"TabLabel"
+    (object "::.main_pane.source4" method "::mtiwidgets::WindowObj::UpdateText" body line 8)
+    invoked from within
+"$windowobj UpdateText"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::SrcCommon::updateTitle" body line 37)
+    invoked from within
+"updateTitle $fileName"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::OpenFile" body line 93)
+    invoked from within
+"OpenFile $use_file 0 $ro"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::SourceReplaceFile" body line 9)
+    invoked from within
+"SourceReplaceFile $fileName"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::CheckModification" body line 26)
+    invoked from within
+"::.main_pane.source4.interior.cs.body.srcobj CheckModification"
+    (in namespace inscope "::vsimwidgets::Srcobj" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Srcobj {::.main_pane.source4.interior.cs.body.srcobj CheckModification}"
+    (command bound to event)
+  <2:C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {too many nested evaluations (infinite loop?)}
+  <1:proc:153: ::tk::dialog::error::bgerror {too many nested evaluations (infinite loop?)}
+Wed Sep 23 21:13:59 CEST 2020
+Trace back: too many nested evaluations (infinite loop?)
+    (object "::.main_pane.cs.82.ts" method "::mtiwidgets::Tabset::_index" body line 1)
+    invoked from within
+"_index $_tabs $index $_currTab"
+    (object "::.main_pane.cs.82.ts" method "::mtiwidgets::Tabset::index" body line 5)
+    invoked from within
+"index $index"
+    (object "::.main_pane.cs.82.ts" method "::mtiwidgets::Tabset::tabconfigure" body line 3)
+    invoked from within
+"tabconfigure 0 -label"
+    ("eval" body line 1)
+    invoked from within
+"eval [linsert $args 0 tabconfigure $index]"
+    (object "::.main_pane.cs.82.ts" method "::mtiwidgets::Tabset::tabcget" body line 2)
+    invoked from within
+"tabcget $idx -label"
+    (object "::.main_pane.cs.82.ts" method "::mtiwidgets::DraggableTabset::indexFromWindow" body line 6)
+    invoked from within
+"$itk_component(ts) indexFromWindow $window"
+    (object "::.main_pane.cs.82" method "::mtiwidgets::Tabbedwindow::panecget" body line 7)
+    invoked from within
+"$pp panecget $window $option"
+    (object "::.main_pane" method "::mtiwidgets::Panemanager::panecget" body line 16)
+    invoked from within
+"panecget $window -hide"
+    (object "::.main_pane" method "::mtiwidgets::Panemanager::visible" body line 18)
+    invoked from within
+"$panemanager visible $windowobj"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::PaneMgrVisible" body line 2)
+    invoked from within
+"PaneMgrVisible $windowobj"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::WindowObjVisible" body line 3)
+    invoked from within
+"WindowObjVisible $windowobj"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::WindowInLayout" body line 2)
+    invoked from within
+"WindowInLayout $a_windowobj"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::GetUniqueLabel" body line 8)
+    invoked from within
+"$itk_option(-windowmanager) GetUniqueLabel $frame_name $tab_label"
+    (object "::.main_pane.source4" method "::mtiwidgets::WindowObj::TabLabel" body line 31)
+    invoked from within
+"$windowobj TabLabel"
+    (object "::.main_pane.cs.82.ts" method "::mtiwidgets::DraggableTabset::renametab" body line 2)
+    invoked from within
+"$itk_component(ts) renametab $window"
+    (object "::.main_pane.cs.82" method "::mtiwidgets::Tabbedwindow::renametab" body line 2)
+    invoked from within
+"$tabbedwindow renametab $window"
+    (object "::.main_pane" method "::mtiwidgets::Panemanager::rename" body line 4)
+    invoked from within
+"$itk_option(-panemanager) rename $frame_name"
+    (while configuring option "-tab_label" for widget "::.main_pane.source4")
+    (object "::.main_pane.source4" method "::itk::Archetype::configure" )
+    invoked from within
+"configure -tab_label $unique_label"
+    (object "::.main_pane.source4" method "::mtiwidgets::WindowObj::TabLabel" body line 37)
+    invoked from within
+"TabLabel"
+    (object "::.main_pane.source4" method "::mtiwidgets::WindowObj::UpdateText" body line 8)
+    invoked from within
+"$windowobj UpdateText"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::SrcCommon::updateTitle" body line 37)
+    invoked from within
+"updateTitle $fileName"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::OpenFile" body line 93)
+    invoked from within
+"OpenFile $use_file 0 $ro"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::SourceReplaceFile" body line 9)
+    invoked from within
+"SourceReplaceFile $fileName"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::CheckModification" body line 26)
+    invoked from within
+"::.main_pane.source4.interior.cs.body.srcobj CheckModification"
+    (in namespace inscope "::vsimwidgets::Srcobj" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Srcobj {::.main_pane.source4.interior.cs.body.srcobj CheckModification}"
+    (command bound to event)
+  <2:C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {too many nested evaluations (infinite loop?)}
+  <1:proc:153: ::tk::dialog::error::bgerror {too many nested evaluations (infinite loop?)}
+Wed Sep 23 21:18:50 CEST 2020
+Trace back: too many nested evaluations (infinite loop?)
+    (procedure "DoNormalizeKey" line 1)
+    invoked from within
+"DoNormalizeKey $key $install $report"
+    (procedure "NormalizeKey" line 3)
+    invoked from within
+"NormalizeKey $key"
+    (procedure "Binding::ServiceBinding" line 8)
+    invoked from within
+"Binding::ServiceBinding .srcobjdlg <Key-Return> 13 158 142 782 525 \r"
+    (command bound to event)
+  <2:C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {too many nested evaluations (infinite loop?)}
+  <1:proc:153: ::tk::dialog::error::bgerror {too many nested evaluations (infinite loop?)}
+Wed Sep 23 21:18:50 CEST 2020
+Trace back: too many nested evaluations (infinite loop?)
+    (procedure "getCurrentNamespace" line 1)
+    invoked from within
+"getCurrentNamespace"
+    (procedure "ContextIsSim" line 4)
+    invoked from within
+"ContextIsSim"
+    (procedure "::MtiFS::GetKernelPathname" line 16)
+    invoked from within
+"::MtiFS::GetKernelPathname $fileName"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::OpenFile" body line 5)
+    invoked from within
+"OpenFile $use_file 0 $ro"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::SourceReplaceFile" body line 9)
+    invoked from within
+"SourceReplaceFile $fileName"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::CheckModification" body line 26)
+    invoked from within
+"::.main_pane.source4.interior.cs.body.srcobj CheckModification"
+    (in namespace inscope "::vsimwidgets::Srcobj" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Srcobj {::.main_pane.source4.interior.cs.body.srcobj CheckModification}"
+    (command bound to event)
+  <2:C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {too many nested evaluations (infinite loop?)}
+  <1:proc:153: ::tk::dialog::error::bgerror {too many nested evaluations (infinite loop?)}
+Wed Sep 23 21:18:50 CEST 2020
+Trace back: too many nested evaluations (infinite loop?)
+    while executing
+"_init .main_pane.source4.interior.cs.body.srcobj.sci {} -motionactive -mono -tight -enabledcb {namespace inscope ::vsimwidgets::SrcCommon {::.main_pan..."
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 [lrange $args 0 end-1] [lindex $args end]"
+    (procedure "::applyToList" line 2)
+    invoked from within
+"::applyToList _init $w $msg $args"
+    (procedure "mtiBalloon::_mtiBalloon" line 37)
+    invoked from within
+"mtiBalloon::_mtiBalloon .main_pane.source4.interior.cs.body.srcobj.sci {} -motionactive -mono -tight -enabledcb {namespace inscope ::vsimwidgets::SrcC..."
+    ("eval" body line 1)
+    invoked from within
+"eval [linsert $args 0 mtiBalloon::_mtiBalloon $w $msg]"
+    (procedure "mtiBalloon" line 2)
+    invoked from within
+"mtiBalloon .main_pane.source4.interior.cs.body.srcobj.sci "" -motionactive -mono -tight -enabledcb {namespace inscope ::vsimwidgets::SrcCommon {::.mai..."
+    ("eval" body line 1)
+    invoked from within
+"eval mtiBalloon $w {""} $args"
+    (procedure "mtiBalloon::Register" line 2)
+    invoked from within
+"mtiBalloon::Register $w -motionactive -mono -tight  -enabledcb [code $this BalloonsEnabled]  -getmsgcb  [code $this BalloonText]"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::SrcCommon::BalloonInitialize" body line 2)
+    invoked from within
+"BalloonInitialize [GetTextWidget] $this"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::InitializeForDebug" body line 16)
+    invoked from within
+"InitializeForDebug"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::OpenFile" body line 92)
+    invoked from within
+"OpenFile $use_file 0 $ro"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::SourceReplaceFile" body line 9)
+    invoked from within
+"SourceReplaceFile $fileName"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::CheckModification" body line 26)
+    invoked from within
+"::.main_pane.source4.interior.cs.body.srcobj CheckModification"
+    (in namespace inscope "::vsimwidgets::Srcobj" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Srcobj {::.main_pane.source4.interior.cs.body.srcobj CheckModification}"
+    (command bound to event)
+  <2:C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {too many nested evaluations (infinite loop?)}
+  <1:proc:153: ::tk::dialog::error::bgerror {too many nested evaluations (infinite loop?)}
+Wed Sep 23 21:18:51 CEST 2020
+Trace back: too many nested evaluations (infinite loop?)
+    (object "::.main_pane.cs.124.ts" method "::mtiwidgets::Tabset::index" body line 1)
+    invoked from within
+"index $index"
+    (object "::.main_pane.cs.124.ts" method "::mtiwidgets::Tabset::tabconfigure" body line 3)
+    invoked from within
+"tabconfigure 0 -label"
+    ("eval" body line 1)
+    invoked from within
+"eval [linsert $args 0 tabconfigure $index]"
+    (object "::.main_pane.cs.124.ts" method "::mtiwidgets::Tabset::tabcget" body line 2)
+    invoked from within
+"tabcget $idx -label"
+    (object "::.main_pane.cs.124.ts" method "::mtiwidgets::DraggableTabset::indexFromWindow" body line 6)
+    invoked from within
+"$itk_component(ts) indexFromWindow $window"
+    (object "::.main_pane.cs.124" method "::mtiwidgets::Tabbedwindow::panecget" body line 7)
+    invoked from within
+"$pp panecget $window $option"
+    (object "::.main_pane" method "::mtiwidgets::Panemanager::panecget" body line 16)
+    invoked from within
+"panecget $window -hide"
+    (object "::.main_pane" method "::mtiwidgets::Panemanager::visible" body line 18)
+    invoked from within
+"$panemanager visible $windowobj"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::PaneMgrVisible" body line 2)
+    invoked from within
+"PaneMgrVisible $windowobj"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::WindowObjVisible" body line 3)
+    invoked from within
+"WindowObjVisible $windowobj"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::WindowInLayout" body line 2)
+    invoked from within
+"WindowInLayout $a_windowobj"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::GetUniqueLabel" body line 8)
+    invoked from within
+"$itk_option(-windowmanager) GetUniqueLabel $frame_name $tab_label"
+    (object "::.main_pane.source4" method "::mtiwidgets::WindowObj::TabLabel" body line 31)
+    invoked from within
+"TabLabel"
+    (object "::.main_pane.source4" method "::mtiwidgets::WindowObj::UpdateText" body line 8)
+    invoked from within
+"$windowobj UpdateText"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::SrcCommon::updateTitle" body line 37)
+    invoked from within
+"updateTitle $fileName"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::OpenFile" body line 93)
+    invoked from within
+"OpenFile $use_file 0 $ro"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::SourceReplaceFile" body line 9)
+    invoked from within
+"SourceReplaceFile $fileName"
+    (object "::.main_pane.source4.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::CheckModification" body line 26)
+    invoked from within
+"::.main_pane.source4.interior.cs.body.srcobj CheckModification"
+    (in namespace inscope "::vsimwidgets::Srcobj" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Srcobj {::.main_pane.source4.interior.cs.body.srcobj CheckModification}"
+    (command bound to event)
+  <2:C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {too many nested evaluations (infinite loop?)}
+  <1:proc:153: ::tk::dialog::error::bgerror {too many nested evaluations (infinite loop?)}

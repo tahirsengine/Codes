@@ -1,0 +1,2174 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Sep 23 09:39:09 2020
+# Process ID: 15960
+# Current directory: C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14612 C:\Users\tahir\Desktop\Xilinx-BRAM\BRAM\BRAM.xpr
+# Log file: C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/vivado.log
+# Journal file: C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:11 . Memory (MB): peak = 713.063 ; gain = 84.664
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_0 -dir c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip
+set_property -dict [list CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Write_Width_A {8} CONFIG.Write_Depth_A {8} CONFIG.Read_Width_A {8} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8} CONFIG.Use_RSTA_Pin {true} CONFIG.Additional_Inputs_for_Power_Estimation {false} CONFIG.EN_SAFETY_CKT {true}] [get_ips blk_mem_gen_0]
+generate_target {instantiation_template} [get_files c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_0'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_0'...
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] }
+export_ip_user_files -of_objects [get_files c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+launch_runs -jobs 4 blk_mem_gen_0_synth_1
+[Wed Sep 23 09:58:54 2020] Launched blk_mem_gen_0_synth_1...
+Run output will be captured here: C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.runs/blk_mem_gen_0_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -directory C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.ip_user_files -ipstatic_source_dir C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.cache/compile_simlib/modelsim} {questa=C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.cache/compile_simlib/questa} {riviera=C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.cache/compile_simlib/riviera} {activehdl=C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+file mkdir C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/new
+close [ open C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/new/top_BRAM.v w ]
+add_files C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/new/top_BRAM.v
+export_ip_user_files -of_objects  [get_files c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -reset -force -quiet
+remove_files  -fileset blk_mem_gen_0 c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+INFO: [Project 1-386] Moving file 'c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' from fileset 'blk_mem_gen_0' to fileset 'sources_1'.
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_0 -dir c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip
+set_property -dict [list CONFIG.Write_Width_A {8} CONFIG.Write_Depth_A {8} CONFIG.Read_Width_A {8} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8} CONFIG.Register_PortA_Output_of_Memory_Core {false} CONFIG.Use_RSTA_Pin {true} CONFIG.EN_SAFETY_CKT {true}] [get_ips blk_mem_gen_0]
+generate_target {instantiation_template} [get_files c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_0'...
+update_compile_order -fileset sources_1
+set_property generate_synth_checkpoint false [get_files  c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci]
+generate_target all [get_files  c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_0'...
+export_ip_user_files -of_objects [get_files c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci] -directory C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.ip_user_files -ipstatic_source_dir C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.cache/compile_simlib/modelsim} {questa=C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.cache/compile_simlib/questa} {riviera=C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.cache/compile_simlib/riviera} {activehdl=C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci] -no_script -reset -force -quiet
+remove_files  c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_0 -dir c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip
+set_property -dict [list CONFIG.Use_Byte_Write_Enable {true} CONFIG.Write_Width_A {9} CONFIG.Write_Depth_A {8} CONFIG.Read_Width_A {9} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {9} CONFIG.Read_Width_B {9} CONFIG.Use_RSTA_Pin {true} CONFIG.EN_SAFETY_CKT {true}] [get_ips blk_mem_gen_0]
+generate_target {instantiation_template} [get_files c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0_2/blk_mem_gen_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_0'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0_2/blk_mem_gen_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_0'...
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] }
+export_ip_user_files -of_objects [get_files c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0_2/blk_mem_gen_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0_2/blk_mem_gen_0.xci]
+launch_runs -jobs 4 blk_mem_gen_0_synth_1
+[Wed Sep 23 10:14:20 2020] Launched blk_mem_gen_0_synth_1...
+Run output will be captured here: C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.runs/blk_mem_gen_0_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0_2/blk_mem_gen_0.xci] -directory C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.ip_user_files -ipstatic_source_dir C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.cache/compile_simlib/modelsim} {questa=C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.cache/compile_simlib/questa} {riviera=C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.cache/compile_simlib/riviera} {activehdl=C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0_2/blk_mem_gen_0.xci] -no_script -reset -force -quiet
+remove_files  -fileset blk_mem_gen_0 c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0_2/blk_mem_gen_0.xci
+INFO: [Project 1-386] Moving file 'c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0_2/blk_mem_gen_0.xci' from fileset 'blk_mem_gen_0' to fileset 'sources_1'.
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_0 -dir c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip
+set_property -dict [list CONFIG.Write_Width_A {8} CONFIG.Write_Depth_A {8} CONFIG.Read_Width_A {8} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8} CONFIG.Use_RSTA_Pin {true} CONFIG.EN_SAFETY_CKT {true}] [get_ips blk_mem_gen_0]
+generate_target {instantiation_template} [get_files c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_0'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_0'...
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP blk_mem_gen_0, cache-ID = e30ce1300a67164a; cache size = 0.123 MB.
+export_ip_user_files -of_objects [get_files c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci'
+export_simulation -of_objects [get_files c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -directory C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.ip_user_files -ipstatic_source_dir C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.cache/compile_simlib/modelsim} {questa=C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.cache/compile_simlib/questa} {riviera=C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.cache/compile_simlib/riviera} {activehdl=C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' is already up-to-date
+[Wed Sep 23 10:26:13 2020] Launched synth_1...
+Run output will be captured here: C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:44 . Memory (MB): peak = 873.652 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' is already up-to-date
+[Wed Sep 23 10:30:31 2020] Launched synth_1...
+Run output will be captured here: C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 969.273 ; gain = 3.148
+launch_runs impl_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' is already up-to-date
+[Wed Sep 23 10:32:18 2020] Launched impl_1...
+Run output will be captured here: C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7s25csga324-1
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Constraints 18-4398] Generator version for shapeDB does not match. shapeDB will be regenerated.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 1264.543 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.085 . Memory (MB): peak = 1264.543 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1264.680 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:36 ; elapsed = 00:00:25 . Memory (MB): peak = 1425.918 ; gain = 438.539
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7s25csga324-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp' for cell 'your_instance_name'
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1814.555 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 1906.332 ; gain = 158.867
+file mkdir C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v w ]
+add_files -fileset sim_1 C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v
+update_compile_order -fileset sim_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_BRAM' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_BRAM_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/new/top_BRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_BRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+"xelab -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_BRAM_behav xil_defaultlib.top_BRAM xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_BRAM_behav xil_defaultlib.top_BRAM xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="spa...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.top_BRAM
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_BRAM_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim/xsim.dir/top_BRAM_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim/xsim.dir/top_BRAM_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Sep 23 11:10:44 2020. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Sep 23 11:10:44 2020...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1987.246 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_BRAM_behav -key {Behavioral:sim_1:Functional:top_BRAM} -tclbatch {top_BRAM.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source top_BRAM.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module top_BRAM.your_instance_name.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_BRAM_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 2005.539 ; gain = 18.324
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 2030.762 ; gain = 0.000
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tc_bram' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tc_bram_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tc_bram
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+"xelab -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tc_bram_behav xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tc_bram_behav xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3180] cannot find port 'rsta_busy' on this module [C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v:38]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' is already up-to-date
+[Wed Sep 23 11:16:21 2020] Launched synth_1...
+Run output will be captured here: C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Sep 23 11:17:06 2020] Launched impl_1...
+Run output will be captured here: C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.runs/impl_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tc_bram' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tc_bram_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/new/top_BRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_BRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tc_bram
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+"xelab -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tc_bram_behav xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tc_bram_behav xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'douta' is not permitted [C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v:37]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' is already up-to-date
+[Wed Sep 23 11:20:29 2020] Launched synth_1...
+Run output will be captured here: C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Sep 23 11:21:41 2020] Launched impl_1...
+Run output will be captured here: C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.runs/impl_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tc_bram' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tc_bram_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/new/top_BRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_BRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tc_bram
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+"xelab -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tc_bram_behav xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tc_bram_behav xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="spa...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.top_BRAM
+Compiling module xil_defaultlib.tc_bram
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tc_bram_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim/xsim.dir/tc_bram_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim/xsim.dir/tc_bram_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Sep 23 11:23:16 2020. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Sep 23 11:23:16 2020...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2086.355 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tc_bram_behav -key {Behavioral:sim_1:Functional:tc_bram} -tclbatch {tc_bram.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tc_bram.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module tc_bram.your_instance_name.your_instance_name.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+$stop called at time : 40 ns : File "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" Line 69
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tc_bram_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 2095.102 ; gain = 8.746
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+Block Memory Generator module tc_bram.your_instance_name.your_instance_name.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+$stop called at time : 40 ns : File "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" Line 69
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 2096.516 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tc_bram' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tc_bram_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/new/top_BRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_BRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tc_bram
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+"xelab -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tc_bram_behav xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tc_bram_behav xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="spa...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.top_BRAM
+Compiling module xil_defaultlib.tc_bram
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tc_bram_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tc_bram_behav -key {Behavioral:sim_1:Functional:tc_bram} -tclbatch {tc_bram.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tc_bram.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module tc_bram.your_instance_name.your_instance_name.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+$stop called at time : 40 ns : File "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" Line 69
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tc_bram_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 2096.516 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tc_bram' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tc_bram_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/new/top_BRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_BRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tc_bram
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+"xelab -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tc_bram_behav xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tc_bram_behav xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="spa...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.top_BRAM
+Compiling module xil_defaultlib.tc_bram
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tc_bram_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tc_bram_behav -key {Behavioral:sim_1:Functional:tc_bram} -tclbatch {tc_bram.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tc_bram.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module tc_bram.your_instance_name.your_instance_name.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+$stop called at time : 40 ns : File "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" Line 69
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tc_bram_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2184.211 ; gain = 0.273
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_design
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tc_bram' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tc_bram_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+"xelab -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tc_bram_behav xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tc_bram_behav xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tc_bram_behav -key {Behavioral:sim_1:Functional:tc_bram} -tclbatch {tc_bram.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tc_bram.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module tc_bram.your_instance_name.your_instance_name.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+$stop called at time : 40 ns : File "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" Line 69
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tc_bram_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2184.211 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tc_bram' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tc_bram_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+"xelab -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tc_bram_behav xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tc_bram_behav xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tc_bram_behav -key {Behavioral:sim_1:Functional:tc_bram} -tclbatch {tc_bram.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tc_bram.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module tc_bram.your_instance_name.your_instance_name.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+$stop called at time : 40 ns : File "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" Line 69
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tc_bram_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2184.211 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -mode post-synthesis -type functional
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/func/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7s25csga324-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp' for cell 'your_instance_name'
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2184.211 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode funcsim -nolib -force -file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/func/xsim/tc_bram_func_synth.v"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/func/xsim/tc_bram_func_synth.v
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/func/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tc_bram' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/func/xsim'
+"xvlog --incr --relax -prj tc_bram_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/func/xsim/tc_bram_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-311] analyzing module top_BRAM
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_generic_cstr
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_prim_width
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_prim_wrapper
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_top
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_v8_4_3
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_v8_4_3_synth
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tc_bram
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/func/xsim'
+"xelab -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot tc_bram_func_synth xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot tc_bram_func_synth xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.SRL16E_default
+Compiling module unisims_ver.RB18_INTERNAL_VLOG(DOA_REG=1,DOB...
+Compiling module unisims_ver.RAMB18E1(DOA_REG=1,DOB_REG=1,REA...
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_prim_...
+Compiling module unisims_ver.LUT4
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_prim_...
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_gener...
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_top
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_v8_4_...
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_v8_4_...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.top_BRAM
+Compiling module xil_defaultlib.tc_bram
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tc_bram_func_synth
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/func/xsim/xsim.dir/tc_bram_func_synth/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/func/xsim/xsim.dir/tc_bram_func_synth/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Sep 23 12:13:24 2020. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Sep 23 12:13:24 2020...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2184.211 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tc_bram_func_synth -key {Post-Synthesis:sim_1:Functional:tc_bram} -tclbatch {tc_bram.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tc_bram.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 40 ns : File "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" Line 69
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tc_bram_func_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 2184.211 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2184.211 ; gain = 0.000
+current_design impl_1
+close_design
+launch_simulation -mode post-implementation -type functional
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching post-implementation functional simulation in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/impl/func/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Constraints 18-4398] Generator version for shapeDB does not match. shapeDB will be regenerated.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.169 . Memory (MB): peak = 2184.211 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.169 . Memory (MB): peak = 2184.211 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2184.211 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode funcsim -nolib -force -file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/impl/func/xsim/tc_bram_func_impl.v"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/impl/func/xsim/tc_bram_func_impl.v
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/impl/func/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tc_bram' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/impl/func/xsim'
+"xvlog --incr --relax -prj tc_bram_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/impl/func/xsim/tc_bram_func_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-311] analyzing module top_BRAM
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_generic_cstr
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_prim_width
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_prim_wrapper
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_top
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_v8_4_3
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_v8_4_3_synth
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tc_bram
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/impl/func/xsim'
+"xelab -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot tc_bram_func_impl xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot tc_bram_func_impl xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.SRL16E_default
+Compiling module unisims_ver.RB18_INTERNAL_VLOG(DOA_REG=1,DOB...
+Compiling module unisims_ver.RAMB18E1(DOA_REG=1,DOB_REG=1,REA...
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_prim_...
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_prim_...
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_gener...
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_top
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_v8_4_...
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_v8_4_...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.top_BRAM
+Compiling module xil_defaultlib.tc_bram
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tc_bram_func_impl
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/impl/func/xsim/xsim.dir/tc_bram_func_impl/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/impl/func/xsim/xsim.dir/tc_bram_func_impl/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Sep 23 12:14:54 2020. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Sep 23 12:14:54 2020...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2184.211 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/impl/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tc_bram_func_impl -key {Post-Implementation:sim_1:Functional:tc_bram} -tclbatch {tc_bram.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tc_bram.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 40 ns : File "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" Line 69
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tc_bram_func_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 2184.211 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' is already up-to-date
+[Wed Sep 23 12:18:29 2020] Launched synth_1...
+Run output will be captured here: C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' is already up-to-date
+[Wed Sep 23 12:21:54 2020] Launched synth_1...
+Run output will be captured here: C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tc_bram' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tc_bram_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/new/top_BRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_BRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tc_bram
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+"xelab -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tc_bram_behav xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tc_bram_behav xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="spa...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.top_BRAM
+Compiling module xil_defaultlib.tc_bram
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tc_bram_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tc_bram_behav -key {Behavioral:sim_1:Functional:tc_bram} -tclbatch {tc_bram.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tc_bram.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module tc_bram.your_instance_name.your_instance_name.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+$stop called at time : 40 ns : File "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" Line 69
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tc_bram_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 2185.141 ; gain = 0.930
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2185.211 ; gain = 0.000
+current_design synth_1
+close_design
+launch_simulation -mode post-synthesis -type functional
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/func/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7s25csga324-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp' for cell 'your_instance_name'
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2185.211 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode funcsim -nolib -force -file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/func/xsim/tc_bram_func_synth.v"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/func/xsim/tc_bram_func_synth.v
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/func/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tc_bram' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/func/xsim'
+"xvlog --incr --relax -prj tc_bram_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/func/xsim/tc_bram_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-311] analyzing module top_BRAM
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_generic_cstr
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_prim_width
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_prim_wrapper
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_top
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_v8_4_3
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_v8_4_3_synth
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tc_bram
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/func/xsim'
+"xelab -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot tc_bram_func_synth xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot tc_bram_func_synth xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.SRL16E_default
+Compiling module unisims_ver.RB18_INTERNAL_VLOG(DOA_REG=1,DOB...
+Compiling module unisims_ver.RAMB18E1(DOA_REG=1,DOB_REG=1,REA...
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_prim_...
+Compiling module unisims_ver.LUT4
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_prim_...
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_gener...
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_top
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_v8_4_...
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_v8_4_...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.top_BRAM
+Compiling module xil_defaultlib.tc_bram
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tc_bram_func_synth
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tc_bram_func_synth -key {Post-Synthesis:sim_1:Functional:tc_bram} -tclbatch {tc_bram.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tc_bram.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 40 ns : File "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" Line 69
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tc_bram_func_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 2185.211 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -mode post-synthesis -type timing
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching post-synthesis timing simulation in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/timing/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/timing/xsim/tc_bram_time_synth.v"
+INFO: [SIM-utils-27] Writing SDF file...
+INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/timing/xsim/tc_bram_time_synth.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/timing/xsim/tc_bram_time_synth.v
+INFO: [SIM-utils-37] SDF generated:C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/timing/xsim/tc_bram_time_synth.sdf
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/timing/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tc_bram' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/timing/xsim'
+"xvlog --incr --relax -prj tc_bram_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/timing/xsim/tc_bram_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-311] analyzing module top_BRAM
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_generic_cstr
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_prim_width
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_prim_wrapper
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_top
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_v8_4_3
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_v8_4_3_synth
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tc_bram
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/timing/xsim'
+"xelab -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tc_bram_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tc_bram_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "tc_bram_time_synth.sdf", for root module "tc_bram/your_instance_name".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "tc_bram_time_synth.sdf", for root module "tc_bram/your_instance_name".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.GND
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.SRL16E_default
+Compiling module simprims_ver.RB18_INTERNAL_VLOG(DOA_REG=1,DOB...
+Compiling module simprims_ver.RAMB18E1(DOA_REG=1,DOB_REG=1,REA...
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_prim_...
+Compiling module simprims_ver.LUT4
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_prim_...
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_gener...
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_top
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_v8_4_...
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_v8_4_...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.top_BRAM
+Compiling module xil_defaultlib.tc_bram
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tc_bram_time_synth
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/timing/xsim/xsim.dir/tc_bram_time_synth/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/timing/xsim/xsim.dir/tc_bram_time_synth/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Sep 23 12:25:08 2020. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Sep 23 12:25:08 2020...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 2196.449 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tc_bram_time_synth -key {Post-Synthesis:sim_1:Timing:tc_bram} -tclbatch {tc_bram.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tc_bram.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/RAMB18E1.v" Line 988: Timing violation in scope /tc_bram/your_instance_name/your_instance_name/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/TChk988_513 at time 2520 ps $setuphold (posedge CLKARDCLK,negedge RSTREGARSTREG,(0:0:0),(0:0:0),notifier_a,clkardclk_en_p,clkardclk_en_p,CLKARDCLK_delay,RSTREGARSTREG_delay) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/RAMB18E1.v" Line 1011: Timing violation in scope /tc_bram/your_instance_name/your_instance_name/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/TChk1011_535 at time 2520 ps $setuphold (posedge CLKBWRCLK,negedge RSTREGB,(0:0:0),(0:0:0),notifier_b,clkbwrclk_en_p,clkbwrclk_en_p,CLKBWRCLK_delay,RSTREGB_delay) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/RAMB18E1.v" Line 987: Timing violation in scope /tc_bram/your_instance_name/your_instance_name/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/TChk987_512 at time 6520 ps $setuphold (posedge CLKARDCLK,posedge RSTREGARSTREG,(0:0:0),(0:0:0),notifier_a,clkardclk_en_p,clkardclk_en_p,CLKARDCLK_delay,RSTREGARSTREG_delay) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/RAMB18E1.v" Line 1010: Timing violation in scope /tc_bram/your_instance_name/your_instance_name/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/TChk1010_534 at time 6520 ps $setuphold (posedge CLKBWRCLK,posedge RSTREGB,(0:0:0),(0:0:0),notifier_b,clkbwrclk_en_p,clkbwrclk_en_p,CLKBWRCLK_delay,RSTREGB_delay) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/RAMB18E1.v" Line 980: Timing violation in scope /tc_bram/your_instance_name/your_instance_name/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/TChk980_505 at time 8922 ps $setuphold (posedge CLKARDCLK,negedge DIADI,(0:0:0),(0:0:0),notifier_a,diadi0_enable_p,diadi0_enable_p,CLKARDCLK_delay,DIADI_delay) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/RAMB18E1.v" Line 1001: Timing violation in scope /tc_bram/your_instance_name/your_instance_name/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/TChk1001_525 at time 8922 ps $setuphold (posedge CLKBWRCLK,negedge DIBDI,(0:0:0),(0:0:0),notifier_b,dibdi0_enable_p,dibdi0_enable_p,CLKBWRCLK_delay,DIBDI_delay) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/RAMB18E1.v" Line 979: Timing violation in scope /tc_bram/your_instance_name/your_instance_name/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/TChk979_504 at time 12922 ps $setuphold (posedge CLKARDCLK,posedge DIADI,(0:0:0),(0:0:0),notifier_a,diadi0_enable_p,diadi0_enable_p,CLKARDCLK_delay,DIADI_delay) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/RAMB18E1.v" Line 1000: Timing violation in scope /tc_bram/your_instance_name/your_instance_name/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/TChk1000_524 at time 12922 ps $setuphold (posedge CLKBWRCLK,posedge DIBDI,(0:0:0),(0:0:0),notifier_b,dibdi0_enable_p,dibdi0_enable_p,CLKBWRCLK_delay,DIBDI_delay) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/RAMB18E1.v" Line 980: Timing violation in scope /tc_bram/your_instance_name/your_instance_name/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/TChk980_505 at time 16922 ps $setuphold (posedge CLKARDCLK,negedge DIADI,(0:0:0),(0:0:0),notifier_a,diadi0_enable_p,diadi0_enable_p,CLKARDCLK_delay,DIADI_delay) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/RAMB18E1.v" Line 1001: Timing violation in scope /tc_bram/your_instance_name/your_instance_name/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/TChk1001_525 at time 16922 ps $setuphold (posedge CLKBWRCLK,negedge DIBDI,(0:0:0),(0:0:0),notifier_b,dibdi0_enable_p,dibdi0_enable_p,CLKBWRCLK_delay,DIBDI_delay) 
+$stop called at time : 40 ns : File "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" Line 69
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tc_bram_time_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 2196.449 ; gain = 11.238
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 2284.289 ; gain = 3.543
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tc_bram' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tc_bram_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/new/top_BRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_BRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tc_bram
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+"xelab -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tc_bram_behav xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tc_bram_behav xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="spa...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.top_BRAM
+Compiling module xil_defaultlib.tc_bram
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tc_bram_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tc_bram_behav -key {Behavioral:sim_1:Functional:tc_bram} -tclbatch {tc_bram.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tc_bram.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module tc_bram.your_instance_name.your_instance_name.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+$stop called at time : 40 ns : File "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" Line 69
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tc_bram_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2284.289 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -mode post-synthesis -type timing
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching post-synthesis timing simulation in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/timing/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/timing/xsim/tc_bram_time_synth.v"
+INFO: [SIM-utils-27] Writing SDF file...
+INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/timing/xsim/tc_bram_time_synth.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/timing/xsim/tc_bram_time_synth.v
+INFO: [SIM-utils-37] SDF generated:C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/timing/xsim/tc_bram_time_synth.sdf
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/timing/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tc_bram' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/timing/xsim'
+"xvlog --incr --relax -prj tc_bram_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/timing/xsim/tc_bram_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-311] analyzing module top_BRAM
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_generic_cstr
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_prim_width
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_prim_wrapper
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_top
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_v8_4_3
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_v8_4_3_synth
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tc_bram
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/timing/xsim'
+"xelab -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tc_bram_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tc_bram_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "tc_bram_time_synth.sdf", for root module "tc_bram/your_instance_name".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "tc_bram_time_synth.sdf", for root module "tc_bram/your_instance_name".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.GND
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.SRL16E_default
+Compiling module simprims_ver.RB18_INTERNAL_VLOG(DOA_REG=1,DOB...
+Compiling module simprims_ver.RAMB18E1(DOA_REG=1,DOB_REG=1,REA...
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_prim_...
+Compiling module simprims_ver.LUT4
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_prim_...
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_gener...
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_top
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_v8_4_...
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_v8_4_...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.top_BRAM
+Compiling module xil_defaultlib.tc_bram
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tc_bram_time_synth
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tc_bram_time_synth -key {Post-Synthesis:sim_1:Timing:tc_bram} -tclbatch {tc_bram.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tc_bram.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/RAMB18E1.v" Line 987: Timing violation in scope /tc_bram/your_instance_name/your_instance_name/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/TChk987_512 at time 2520 ps $setuphold (posedge CLKARDCLK,posedge RSTREGARSTREG,(0:0:0),(0:0:0),notifier_a,clkardclk_en_p,clkardclk_en_p,CLKARDCLK_delay,RSTREGARSTREG_delay) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/RAMB18E1.v" Line 1010: Timing violation in scope /tc_bram/your_instance_name/your_instance_name/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/TChk1010_534 at time 2520 ps $setuphold (posedge CLKBWRCLK,posedge RSTREGB,(0:0:0),(0:0:0),notifier_b,clkbwrclk_en_p,clkbwrclk_en_p,CLKBWRCLK_delay,RSTREGB_delay) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/RAMB18E1.v" Line 988: Timing violation in scope /tc_bram/your_instance_name/your_instance_name/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/TChk988_513 at time 6520 ps $setuphold (posedge CLKARDCLK,negedge RSTREGARSTREG,(0:0:0),(0:0:0),notifier_a,clkardclk_en_p,clkardclk_en_p,CLKARDCLK_delay,RSTREGARSTREG_delay) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/RAMB18E1.v" Line 1011: Timing violation in scope /tc_bram/your_instance_name/your_instance_name/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/TChk1011_535 at time 6520 ps $setuphold (posedge CLKBWRCLK,negedge RSTREGB,(0:0:0),(0:0:0),notifier_b,clkbwrclk_en_p,clkbwrclk_en_p,CLKBWRCLK_delay,RSTREGB_delay) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/RAMB18E1.v" Line 980: Timing violation in scope /tc_bram/your_instance_name/your_instance_name/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/TChk980_505 at time 8922 ps $setuphold (posedge CLKARDCLK,negedge DIADI,(0:0:0),(0:0:0),notifier_a,diadi0_enable_p,diadi0_enable_p,CLKARDCLK_delay,DIADI_delay) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/RAMB18E1.v" Line 1001: Timing violation in scope /tc_bram/your_instance_name/your_instance_name/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/TChk1001_525 at time 8922 ps $setuphold (posedge CLKBWRCLK,negedge DIBDI,(0:0:0),(0:0:0),notifier_b,dibdi0_enable_p,dibdi0_enable_p,CLKBWRCLK_delay,DIBDI_delay) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/RAMB18E1.v" Line 979: Timing violation in scope /tc_bram/your_instance_name/your_instance_name/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/TChk979_504 at time 12922 ps $setuphold (posedge CLKARDCLK,posedge DIADI,(0:0:0),(0:0:0),notifier_a,diadi0_enable_p,diadi0_enable_p,CLKARDCLK_delay,DIADI_delay) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/RAMB18E1.v" Line 1000: Timing violation in scope /tc_bram/your_instance_name/your_instance_name/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/TChk1000_524 at time 12922 ps $setuphold (posedge CLKBWRCLK,posedge DIBDI,(0:0:0),(0:0:0),notifier_b,dibdi0_enable_p,dibdi0_enable_p,CLKBWRCLK_delay,DIBDI_delay) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/RAMB18E1.v" Line 980: Timing violation in scope /tc_bram/your_instance_name/your_instance_name/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/TChk980_505 at time 16922 ps $setuphold (posedge CLKARDCLK,negedge DIADI,(0:0:0),(0:0:0),notifier_a,diadi0_enable_p,diadi0_enable_p,CLKARDCLK_delay,DIADI_delay) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/RAMB18E1.v" Line 1001: Timing violation in scope /tc_bram/your_instance_name/your_instance_name/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/TChk1001_525 at time 16922 ps $setuphold (posedge CLKBWRCLK,negedge DIBDI,(0:0:0),(0:0:0),notifier_b,dibdi0_enable_p,dibdi0_enable_p,CLKBWRCLK_delay,DIBDI_delay) 
+$stop called at time : 40 ns : File "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" Line 69
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tc_bram_time_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 2302.820 ; gain = 18.531
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tc_bram' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tc_bram_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/new/top_BRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_BRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tc_bram
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+"xelab -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tc_bram_behav xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tc_bram_behav xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="spa...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.top_BRAM
+Compiling module xil_defaultlib.tc_bram
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tc_bram_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tc_bram_behav -key {Behavioral:sim_1:Functional:tc_bram} -tclbatch {tc_bram.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tc_bram.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module tc_bram.your_instance_name.your_instance_name.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+$stop called at time : 40 ns : File "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" Line 69
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tc_bram_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 2302.820 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -mode post-synthesis -type functional
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/func/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode funcsim -nolib -force -file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/func/xsim/tc_bram_func_synth.v"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/func/xsim/tc_bram_func_synth.v
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/func/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tc_bram' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/func/xsim'
+"xvlog --incr --relax -prj tc_bram_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/func/xsim/tc_bram_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-311] analyzing module top_BRAM
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_generic_cstr
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_prim_width
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_prim_wrapper
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_top
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_v8_4_3
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_v8_4_3_synth
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tc_bram
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/func/xsim'
+"xelab -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot tc_bram_func_synth xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot tc_bram_func_synth xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.SRL16E_default
+Compiling module unisims_ver.RB18_INTERNAL_VLOG(DOA_REG=1,DOB...
+Compiling module unisims_ver.RAMB18E1(DOA_REG=1,DOB_REG=1,REA...
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_prim_...
+Compiling module unisims_ver.LUT4
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_prim_...
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_gener...
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_top
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_v8_4_...
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_v8_4_...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.top_BRAM
+Compiling module xil_defaultlib.tc_bram
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tc_bram_func_synth
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tc_bram_func_synth -key {Post-Synthesis:sim_1:Functional:tc_bram} -tclbatch {tc_bram.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tc_bram.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 40 ns : File "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" Line 69
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tc_bram_func_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 2767.691 ; gain = 0.270
+run all
+run: Time (s): cpu = 00:00:21 ; elapsed = 00:00:34 . Memory (MB): peak = 2767.691 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tc_bram' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tc_bram_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/new/top_BRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_BRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tc_bram
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+"xelab -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tc_bram_behav xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tc_bram_behav xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="spa...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.top_BRAM
+Compiling module xil_defaultlib.tc_bram
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tc_bram_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tc_bram_behav -key {Behavioral:sim_1:Functional:tc_bram} -tclbatch {tc_bram.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tc_bram.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module tc_bram.your_instance_name.your_instance_name.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+$stop called at time : 46 ns : File "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" Line 69
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tc_bram_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2767.691 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -mode post-synthesis -type functional
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/func/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode funcsim -nolib -force -file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/func/xsim/tc_bram_func_synth.v"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/func/xsim/tc_bram_func_synth.v
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/func/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tc_bram' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/func/xsim'
+"xvlog --incr --relax -prj tc_bram_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/func/xsim/tc_bram_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-311] analyzing module top_BRAM
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_generic_cstr
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_prim_width
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_prim_wrapper
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_top
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_v8_4_3
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_v8_4_3_synth
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tc_bram
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/func/xsim'
+"xelab -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot tc_bram_func_synth xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot tc_bram_func_synth xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.SRL16E_default
+Compiling module unisims_ver.RB18_INTERNAL_VLOG(DOA_REG=1,DOB...
+Compiling module unisims_ver.RAMB18E1(DOA_REG=1,DOB_REG=1,REA...
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_prim_...
+Compiling module unisims_ver.LUT4
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_prim_...
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_gener...
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_top
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_v8_4_...
+Compiling module xil_defaultlib.blk_mem_gen_0__blk_mem_gen_v8_4_...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.top_BRAM
+Compiling module xil_defaultlib.tc_bram
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tc_bram_func_synth
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tc_bram_func_synth -key {Post-Synthesis:sim_1:Functional:tc_bram} -tclbatch {tc_bram.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tc_bram.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 46 ns : File "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" Line 69
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tc_bram_func_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 2767.691 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tc_bram' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tc_bram_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/new/top_BRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_BRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tc_bram
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+"xelab -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tc_bram_behav xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tc_bram_behav xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="spa...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.top_BRAM
+Compiling module xil_defaultlib.tc_bram
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tc_bram_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tc_bram_behav -key {Behavioral:sim_1:Functional:tc_bram} -tclbatch {tc_bram.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tc_bram.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module tc_bram.your_instance_name.your_instance_name.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+$stop called at time : 46 ns : File "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" Line 69
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tc_bram_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2767.691 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tc_bram' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tc_bram_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/new/top_BRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_BRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tc_bram
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+"xelab -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tc_bram_behav xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 7c3cd7a9f66c414c89fbff31e3bb3bc5 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tc_bram_behav xil_defaultlib.tc_bram xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="spa...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.top_BRAM
+Compiling module xil_defaultlib.tc_bram
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tc_bram_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tc_bram_behav -key {Behavioral:sim_1:Functional:tc_bram} -tclbatch {tc_bram.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tc_bram.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module tc_bram.your_instance_name.your_instance_name.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+$stop called at time : 46 ns : File "C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v" Line 69
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tc_bram_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 2767.691 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+create_project control C:/Users/tahir/Desktop/Xilinx_Control/control -part xc7s25csga324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2767.691 ; gain = 0.000
+file mkdir C:/Users/tahir/Desktop/Xilinx_Control/control/control.srcs/sources_1/new
+close [ open C:/Users/tahir/Desktop/Xilinx_Control/control/control.srcs/sources_1/new/control.v w ]
+add_files C:/Users/tahir/Desktop/Xilinx_Control/control/control.srcs/sources_1/new/control.v
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+CRITICAL WARNING: [HDL 9-806] Syntax error near "input". [C:/Users/tahir/Desktop/Xilinx_Control/control/control.srcs/sources_1/new/control.v:4]
+[Wed Sep 23 13:20:12 2020] Launched synth_1...
+Run output will be captured here: C:/Users/tahir/Desktop/Xilinx_Control/control/control.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Sep 23 13:31:32 2020] Launched synth_1...
+Run output will be captured here: C:/Users/tahir/Desktop/Xilinx_Control/control/control.runs/synth_1/runme.log
+file mkdir C:/Users/tahir/Desktop/Xilinx_Control/control/control.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/tahir/Desktop/Xilinx_Control/control/control.srcs/sim_1/new/tb_control.v w ]
+add_files -fileset sim_1 C:/Users/tahir/Desktop/Xilinx_Control/control/control.srcs/sim_1/new/tb_control.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Sep 23 13:51:15 2020] Launched synth_1...
+Run output will be captured here: C:/Users/tahir/Desktop/Xilinx_Control/control/control.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tahir/Desktop/Xilinx_Control/control/control.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_control' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tahir/Desktop/Xilinx_Control/control/control.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_control_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx_Control/control/control.srcs/sources_1/new/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx_Control/control/control.srcs/sim_1/new/tb_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx_Control/control/control.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2767.691 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tahir/Desktop/Xilinx_Control/control/control.sim/sim_1/behav/xsim'
+"xelab -wto 6ccb7d2d080145fd80ec1c036e814295 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_control_behav xil_defaultlib.tb_control xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6ccb7d2d080145fd80ec1c036e814295 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_control_behav xil_defaultlib.tb_control xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.tb_control
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_control_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/tahir/Desktop/Xilinx_Control/control/control.sim/sim_1/behav/xsim/xsim.dir/tb_control_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/tahir/Desktop/Xilinx_Control/control/control.sim/sim_1/behav/xsim/xsim.dir/tb_control_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Sep 23 13:53:24 2020. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 108.988 ; gain = 23.621
+INFO: [Common 17-206] Exiting Webtalk at Wed Sep 23 13:53:24 2020...
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:20 . Memory (MB): peak = 2767.691 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '20' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tahir/Desktop/Xilinx_Control/control/control.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_control_behav -key {Behavioral:sim_1:Functional:tb_control} -tclbatch {tb_control.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_control.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 36 ns : File "C:/Users/tahir/Desktop/Xilinx_Control/control/control.srcs/sim_1/new/tb_control.v" Line 57
+xsim: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2767.691 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_control_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:00:35 . Memory (MB): peak = 2767.691 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 2767.691 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Sep 23 13:57:05 2020] Launched synth_1...
+Run output will be captured here: C:/Users/tahir/Desktop/Xilinx_Control/control/control.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tahir/Desktop/Xilinx_Control/control/control.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_control' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tahir/Desktop/Xilinx_Control/control/control.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_control_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx_Control/control/control.srcs/sources_1/new/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx_Control/control/control.srcs/sim_1/new/tb_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_control
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tahir/Desktop/Xilinx_Control/control/control.sim/sim_1/behav/xsim'
+"xelab -wto 6ccb7d2d080145fd80ec1c036e814295 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_control_behav xil_defaultlib.tb_control xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6ccb7d2d080145fd80ec1c036e814295 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_control_behav xil_defaultlib.tb_control xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.tb_control
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_control_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2767.691 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tahir/Desktop/Xilinx_Control/control/control.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_control_behav -key {Behavioral:sim_1:Functional:tb_control} -tclbatch {tb_control.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_control.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 36 ns : File "C:/Users/tahir/Desktop/Xilinx_Control/control/control.srcs/sim_1/new/tb_control.v" Line 58
+xsim: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2767.691 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_control_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:20 . Memory (MB): peak = 2767.691 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Sep 23 14:00:30 2020] Launched synth_1...
+Run output will be captured here: C:/Users/tahir/Desktop/Xilinx_Control/control/control.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tahir/Desktop/Xilinx_Control/control/control.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_control' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tahir/Desktop/Xilinx_Control/control/control.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_control_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx_Control/control/control.srcs/sources_1/new/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx_Control/control/control.srcs/sim_1/new/tb_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_control
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tahir/Desktop/Xilinx_Control/control/control.sim/sim_1/behav/xsim'
+"xelab -wto 6ccb7d2d080145fd80ec1c036e814295 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_control_behav xil_defaultlib.tb_control xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6ccb7d2d080145fd80ec1c036e814295 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_control_behav xil_defaultlib.tb_control xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.tb_control
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_control_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tahir/Desktop/Xilinx_Control/control/control.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_control_behav -key {Behavioral:sim_1:Functional:tb_control} -tclbatch {tb_control.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_control.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 36 ns : File "C:/Users/tahir/Desktop/Xilinx_Control/control/control.srcs/sim_1/new/tb_control.v" Line 58
+xsim: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 2767.691 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_control_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 2767.691 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2767.691 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tahir/Desktop/Xilinx_Control/control/control.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_control' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tahir/Desktop/Xilinx_Control/control/control.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_control_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx_Control/control/control.srcs/sources_1/new/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx_Control/control/control.srcs/sim_1/new/tb_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_control
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2767.691 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tahir/Desktop/Xilinx_Control/control/control.sim/sim_1/behav/xsim'
+"xelab -wto 6ccb7d2d080145fd80ec1c036e814295 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_control_behav xil_defaultlib.tb_control xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6ccb7d2d080145fd80ec1c036e814295 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_control_behav xil_defaultlib.tb_control xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.tb_control
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_control_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2767.691 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tahir/Desktop/Xilinx_Control/control/control.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_control_behav -key {Behavioral:sim_1:Functional:tb_control} -tclbatch {tb_control.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_control.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 46 ns : File "C:/Users/tahir/Desktop/Xilinx_Control/control/control.srcs/sim_1/new/tb_control.v" Line 59
+xsim: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 2767.691 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_control_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 2767.691 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tahir/Desktop/Xilinx_Control/control/control.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_control' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tahir/Desktop/Xilinx_Control/control/control.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_control_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx_Control/control/control.srcs/sources_1/new/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx_Control/control/control.srcs/sim_1/new/tb_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_control
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tahir/Desktop/Xilinx_Control/control/control.sim/sim_1/behav/xsim'
+"xelab -wto 6ccb7d2d080145fd80ec1c036e814295 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_control_behav xil_defaultlib.tb_control xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6ccb7d2d080145fd80ec1c036e814295 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_control_behav xil_defaultlib.tb_control xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.tb_control
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_control_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tahir/Desktop/Xilinx_Control/control/control.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_control_behav -key {Behavioral:sim_1:Functional:tb_control} -tclbatch {tb_control.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_control.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 36 ns : File "C:/Users/tahir/Desktop/Xilinx_Control/control/control.srcs/sim_1/new/tb_control.v" Line 58
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2767.691 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_control_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 2767.691 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/tahir/Desktop/Xilinx_Control/control/control.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_control' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/tahir/Desktop/Xilinx_Control/control/control.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_control_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx_Control/control/control.srcs/sources_1/new/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/tahir/Desktop/Xilinx_Control/control/control.srcs/sim_1/new/tb_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_control
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/tahir/Desktop/Xilinx_Control/control/control.sim/sim_1/behav/xsim'
+"xelab -wto 6ccb7d2d080145fd80ec1c036e814295 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_control_behav xil_defaultlib.tb_control xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 6ccb7d2d080145fd80ec1c036e814295 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_control_behav xil_defaultlib.tb_control xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.tb_control
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_control_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/tahir/Desktop/Xilinx_Control/control/control.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_control_behav -key {Behavioral:sim_1:Functional:tb_control} -tclbatch {tb_control.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_control.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 46 ns : File "C:/Users/tahir/Desktop/Xilinx_Control/control/control.srcs/sim_1/new/tb_control.v" Line 59
+xsim: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2767.691 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_control_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 2767.691 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 23 14:13:08 2020...

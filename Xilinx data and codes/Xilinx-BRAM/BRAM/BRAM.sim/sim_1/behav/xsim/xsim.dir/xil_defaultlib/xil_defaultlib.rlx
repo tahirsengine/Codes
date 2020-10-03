@@ -1,0 +1,8 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v,1600857447,verilog,,,,tc_bram,,,,,,,,
+C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,1601734362,verilog,,C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/new/top_BRAM.v,,blk_mem_gen_0,,,,,,,,
+C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sources_1/new/top_BRAM.v,1600856443,verilog,,C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v,,top_BRAM,,,,,,,,

@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"tc_bram_func_synth.v" \
+"../../../../../BRAM.srcs/sim_1/new/tc_bram.v" \
+
+# Do not sort compile order
+nosort

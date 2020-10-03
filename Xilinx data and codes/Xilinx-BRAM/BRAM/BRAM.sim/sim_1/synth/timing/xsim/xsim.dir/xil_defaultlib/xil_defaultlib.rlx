@@ -1,0 +1,6 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.sim/sim_1/synth/timing/xsim/tc_bram_time_synth.v,1600856807,verilog,,C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v,,blk_mem_gen_0;blk_mem_gen_0__blk_mem_gen_generic_cstr;blk_mem_gen_0__blk_mem_gen_prim_width;blk_mem_gen_0__blk_mem_gen_prim_wrapper;blk_mem_gen_0__blk_mem_gen_top;blk_mem_gen_0__blk_mem_gen_v8_4_3;blk_mem_gen_0__blk_mem_gen_v8_4_3_synth;glbl;top_BRAM,,,,,,,,
+C:/Users/tahir/Desktop/Xilinx-BRAM/BRAM/BRAM.srcs/sim_1/new/tc_bram.v,1600856620,verilog,,,,tc_bram,,,,,,,,
